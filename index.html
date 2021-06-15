@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rcalculator</title>
 </head>
+
 <body>
     <div class="prices-container">
         <div class="grid-flex">
-          <div class="col">
-            <div class="card" style="width: 100%">
-              <div class="img-square-wrapper">
-                <img class="price-image" src="assets/images/aether.png" alt="Card image cap">
-              </div>
-              <div class="card-body">
-                <div class="inbetween-container">
-                  <p class="wax card-text white" id="aether"></p>
-    
+            <div class="col">
+                <div class="card" style="width: 100%">
+                    <div class="img-square-wrapper">
+                        <img class="price-image" src="assets/images/aether.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <div class="inbetween-container">
+                            <p class="wax card-text white" id="aether"></p>
+
+                        </div>
+                    </div>
+                    <div class="lds-ripple">
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
-              </div>
-              <div class="lds-ripple">
-                <div></div>
-                <div></div>
-              </div>
             </div>
-          </div>
-    
+            <div class="column">
+                <div class="grid-flex">
+                    <div class="col">
+                        <div class="card" style="width: 100%">
+                            <div class="img-square-wrapper">
+                                <img class="price-image" src="assets/images/wax.png" alt="Card image cap">
+                            </div>
+
+                            <div class="card-body">
+                                <div class="inbetween-container">
+                                    <p class="wax card-text white" id="wax"></p>
+                                </div>
+                            </div>
+                            <div class="lds-ripple-two">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tool-container">
+            <a href="https://discord.gg/TUQHkjRX" target="_blank" id="socials-discord-link"><img
+                    src="/assets/images/discord.png" alt="discord" id="socials-discord"></a>
+            <div class="socials-container">
+                <div class="tool-container">
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="toggle-center">
+        <div class="toggle-icon-container">
+            <img id="pickaxe" src="assets/images/mining.png" alt="">
+            <img id="crystal" src="assets/images/minerals.png" alt="">
+        </div>
+    </div>
+
 </body>
+
 </html>
