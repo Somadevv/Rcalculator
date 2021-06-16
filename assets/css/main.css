@@ -7,9 +7,7 @@
   --main: #ff1e7c;
   --bg: #dddddd;
 }
-main {
-    display: none;
-}
+
 body {
 
   background-image: radial-gradient(

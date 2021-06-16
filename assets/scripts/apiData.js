@@ -258,9 +258,6 @@ for (i = 0; i < elements.length; i++) {
 }
 
 
-  
-
-
 elementIcon = document.getElementById('crystal');
 const pickaxeIcon = document.getElementById('pickaxe');
 const elementArea = document.getElementById('search-area');

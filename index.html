@@ -17,9 +17,15 @@
 
 <body>
    <section class="splash-screen">
-       <button onclick="clicked()">Hello!</button>
+       <div class="main-content">
+        <img class="price-image" src="assets/images/aether.png" alt="Card image cap">
+        <img class="price-image" src="assets/images/wax.png" alt="Card image cap">
+        <img class="price-image" src="assets/images/usdt.png" alt="Card image cap">
+       </div>
+
+       <button id="splash">Got it!</button>
    </section>
-   <main>
+   <main class="hidden" id="main">
     <div class="prices-container">
         <div class="grid-flex">
             <div class="col">
@@ -287,6 +293,7 @@
     <script src="assets/scripts/app.js"></script>
     <script src="assets/scripts/apiData.js"></script>
     <script src="assets/scripts/search.js"></script>
+    <script src="assets/scripts/splash.js"></script>
     <script>
       fetchPrice(aetherId, `https://wax.alcor.exchange/api/markets/29`),
     fetchPrice(waxId, `https://api.coingecko.com/api/v3/coins/wax`);
