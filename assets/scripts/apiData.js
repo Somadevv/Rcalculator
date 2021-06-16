@@ -211,6 +211,94 @@ const calculateFigures = (dest) => {
       domUSDT.innerText = data.market_data.current_price.usd;
       prices.usdt = data.market_data.current_price.usd;
     }
-  
   };
+  drawCard = "";
+for (i = 0; i < elements.length; i++) {
+  drawCard +=
+    `<div class="value">
+      <div class="element-card">
+        <img src="${elements[i].src}" class="element-image">
+        <p class="card-title">
+          ${elements[i].name}
+        </p>
+        <p class="card-text ">
+          ${elements[i].cost}
+          <img src="/assets/images/aether.png" class="price-image">
+        </p>
+      </div>
+    </div>`;
+  $(".card-element").html(drawCard);
+
+  /* SEEKER FUNCTION */
+  if (!RegExp.escape) {
+    RegExp.escape = function (s) {
+      return s.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g, "\\$&");
+    };
+  }
+
+  jQuery(function () {
+    var $rows = $(".values");
+    $("#seeker").keyup(function () {
+      var regex = new RegExp(
+        RegExp.escape($.trim(this.value).replace(/\s+/g, " ")),
+        "i"
+      );
+      $rows
+        .hide()
+        .filter(function () {
+          var text = $(this)
+            .children(".value-name")
+            .text()
+            .replace(/\s+/g, " ");
+          return regex.test(text);
+        })
+        .show();
+    });
+  });
+}
+
+
+  
+
+
+elementIcon = document.getElementById('crystal');
+const pickaxeIcon = document.getElementById('pickaxe');
+const elementArea = document.getElementById('search-area');
+elementIcon.addEventListener('click', () => {
+
+    elementArea.classList.remove('hidden2');
+    calculate.classList.add('hidden')
+    $(pickaxeIcon).css('opacity', .3)
+    $(elementIcon).css('opacity', 1)
+  
+
+})
+pickaxeIcon.addEventListener('click', () => {
+  elementArea.classList.add('hidden2');
+
+    calculate.classList.remove('hidden')
+    $(elementIcon).css('opacity', .3)
+    $(pickaxeIcon).css('opacity', 1)
+})
+
+// DROPDOWN BOX 
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
   
