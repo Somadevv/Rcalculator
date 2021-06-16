@@ -104,3 +104,113 @@ const calculateFigures = (dest) => {
       return num.toFixed(decimals);
     }
   }
+  function format(num, fix) {
+    var p = num.toFixed(fix).split(".");
+    return p[0].split("").reduceRight(function(acc, num, i, orig) {
+        if ("-" === num && 0 === i) {
+            return num + acc;
+        }
+        var pos = orig.length - i - 1
+        return  num + (pos && !(pos % 3) ? "," : "") + acc;
+    }, "") + (p[1] ? "." + p[1] : "");
+  }
+  function writeObjectToDom(dest, data) {
+    const firstId = `${dest}-0`;
+    const secondId = `${dest}-1`;
+    const thirdId = `${dest}-2`;
+    const firstElement = document.getElementById(firstId);
+    const secondElement = document.getElementById(secondId);
+    const thirdElement = document.getElementById(thirdId);
+  
+    firstElement.innerText = format(data.daily, 0);
+    secondElement.innerText = format(data.weekly, 0);
+    thirdElement.innerText = format(data.monthly, 0);
+  }
+  
+  function calcDaily(sum1) {
+    const result = sum1 * 24;
+    return result;
+  }
+  function calcWeekly(sum1) {
+    const result = sum1 * 168;
+    return result;
+  }
+  function calcMonthly(sum1) {
+    const result = sum1 * 730;
+    return result;
+  }
+  
+  function fetchPrice(currencyId, url) {
+    const body = {
+      method: "GET",
+    };
+    fetch(url, body)
+      .then((res) => res.json())
+      .then((data) => {
+        responseData[currencyId] = data;
+        return data;
+      })
+      .then((data) => {
+        renderDom(data);
+        $(btn).removeAttr("disabled");
+        $(btn).addClass('btn-danger');
+        $(btn).removeClass('btn-dark');
+        $(userInput).attr("placeholder", "Ready!");
+        $(userInput).removeAttr("disabled");
+        $(loader).addClass('hidden');
+        // $(elementContainer).addClass('hidden');
+  
+  
+      });
+      
+  }
+  setInterval(function () {
+    fetchPrice(aetherId, `https://wax.alcor.exchange/api/markets/29`),
+      fetchPrice(waxId, `https://api.coingecko.com/api/v3/coins/wax`);
+  }, 10000);
+  
+  
+  // REMOVE THIS, IT'S THE TEMPORARY PRICE
+  // domAETHER.innerText = tempAetherPrice;
+  
+  let usdId = "USD";
+  let gbpId = "GBP";
+  let eurId = "EUR";
+  let cadId = "CAD";
+  let audId = "AUD";
+  function updateCurrency(val) {
+  
+    if (val === 'USD'){
+      circleSymbol.innerText = '$';
+      toggledCurrency.innerText = 'USD'
+    } else if(val === 'GBP'){
+      circleSymbol.innerText = '£';
+      toggledCurrency.innerText = 'GBP'
+    }else if(val === 'EUR'){
+      circleSymbol.innerText = '€';
+      toggledCurrency.innerText = 'EUR'
+     }else if(val === 'AUD'){
+      circleSymbol.innerText = 'A$';
+      toggledCurrency.innerText = 'AUD'
+     }else if(val === 'CAD'){
+      circleSymbol.innerText = 'C$';
+      toggledCurrency.innerText = 'CAD'
+     }
+  }
+  
+  const renderDom = (data) => {
+    if (data.id === 29) {
+      domAETHER.innerText = data.last_price;
+      prices.aether = data.last_price;
+    }
+    if (data.id === "wax") {
+      domWAX.innerText = data.market_data.current_price.usd;
+      prices.wax = data.market_data.current_price.usd;
+    }
+    if (data.id === "uniswap-state-dollar") {
+      domUSDT.innerText = data.market_data.current_price.usd;
+      prices.usdt = data.market_data.current_price.usd;
+    }
+  
+  };
+  
