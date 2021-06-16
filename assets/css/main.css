@@ -150,3 +150,278 @@ position: absolute;
   height: 200px;
   max-width: 100%;
 }
+.coin-prices {
+    color: white;
+    list-style: none;
+  }
+  
+  .white {
+    color: white;
+  }
+  
+  .result-image {
+    margin-top: 15px;
+    width: 60%;
+  }
+  
+  /* #aether {
+      position: absolute;
+      top: 68px;
+      left: 28%;
+      width: 100px;
+  }
+  #wax {
+      position: absolute;
+      top: 68px;
+      left: 63.5%;
+      width: 100px;
+  } */
+  #aether-0,
+  #aether-1,
+  #aether-2,
+  #aether-title {
+    color: rgb(241, 16, 91);
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+  }
+  #wax-0,
+  #wax-1,
+  #wax-2,
+  #wax-title {
+    color: orange;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+  }
+  #usdt-0,
+  #usdt-1,
+  #usdt-2,
+  #usdt-title {
+    color: green;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+  }
+  
+  .card {
+    margin: auto 0;
+    background: none;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+  
+  }
+  .card-body {
+    overflow: hidden;
+    height: auto;
+  }
+  .element-card {
+    width: 45.6%;
+    background: rgba(37, 37, 37, 0.842);
+    border: none;
+    text-align: center;
+    margin: 10px;
+    height: auto;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: red;
+  }
+  #content {
+    width: 100%;
+    height: auto;
+  }
+  .card-text {
+    font-size: 0.75rem;
+    color: rgb(255, 255, 255);
+  }
+  .cta-container {
+    text-align: center;
+    width: 100vw;
+    height: auto;
+  }
+  
+  .values {
+    color: wheat;
+    /* background: #FFFFAA; */
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  
+  #data {
+    text-align: center;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .data {
+    text-align: center;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .grid-flex {
+    display: flex;
+  }
+  .column {
+    flex: 1;
+    width: 100%;
+  }
+  .form__dave {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .form__field {
+    opacity: 0.4;
+    margin-left: 10px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    width: 200px;
+    border: 1px solid #ff1e7c;
+    /* border-bottom: 1.75px solid #ff1e7c; */
+    outline: 0;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    padding: 3px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field:hover {
+    border-image: linear-gradient(to right, #9c1149, #ff1e7c);
+    border-image-slice: 1;
+    cursor: text;
+  }
+  .form__field:focus {
+    opacity: 1;
+    padding-bottom: 3px;
+    font-weight: 700;
+    border-width: 1px;
+    border-image: linear-gradient(to right, #9c1149, #ff1e7c);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #ff1e7c;
+    font-weight: 700;
+  }
+  .lds-ripple-two {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+  }
+  .lds-ripple-two div {
+    position: absolute;
+    border: 1px solid rgb(141, 116, 7);
+    opacity: 0;
+    border-radius: 50%;
+    animation: lds-ripple-two 7s cubic-bezier(0.5, -0.1, 0.9, 1) infinite;
+    
+  }
+  .lds-ripple-two div:nth-child(2) {
+    animation-delay: -0.5s;
+  
+  }
+  
+  .lds-ripple {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+  
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 1px solid rgb(247, 9, 120);
+    opacity: 0;
+    border-radius: 50%;
+    animation: lds-ripple 5.25s cubic-bezier(0.5, -0.1, 0.9, 1) infinite;
+    pointer-events: none;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+    pointer-events: none;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: -92.5px;
+      left: 0px;
+      width: 16px;
+      height: 16px;
+      opacity: 0;
+    }
+    50% {
+      top: 0px;
+      left: 23vw;
+      width: 6px;
+      height: 6px;
+      opacity: 1;
+      border: 1px solid rgb(247, 104, 9);
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      border: 1px solid rgb(141, 116, 7);
+      top: -80px;
+      left: 50vw;
+      width: 12px;
+      height: 12px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes lds-ripple-two {
+    0% {
+    }
+    50% {
+      top: -10vh;
+      left: -30px;
+      width: 16px;
+      height: 16px;
+      opacity: 0;
+    }
+    75% {
+      top: -18vh;
+      left: -25vw;
+      width: 6px;
+      height: 6px;
+      opacity: 1;
+      border: 1px solid rgb(247, 243, 9);
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      border: 1px solid rgb(82, 16, 4);
+      top: -10vh;
+      left: -50vw;
+      width: 12px;
+      height: 12px;
+      opacity: 1;
+    }
+  }
+  
+  #aether,
+  #wax {
+    color: wheat;
+  }
+  
+  .arrowTwo {
+    font-size: 1.25rem;
+    color: white;
+    pointer-events: none;
+  }
+  
+  .socials-container {
+    padding-top: 10px;
+    height: 0px;
+    margin: 15px;
+    
+  }
