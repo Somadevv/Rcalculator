@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+* {
+}
+:root {
+  /*  Usage var(--blue)*/
+  --main: #ff1e7c;
+  --bg: #dddddd;
+}
+
+body {
+
+  background-image: radial-gradient(
+    circle at 21% 50%,
+    #38393d,
+    #252736 0%,
+    #333336
+  );
+  font-family: "Roboto", "Righteous";
+  font-size: 16px;
+  align-items: center;
+  width: 100vw;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.currency-symbol {
+position: absolute;
+  margin: auto;
+  margin-top: 18px;
+  width: 50%;
+}
+.type-writer-container {
+  width: 100vw;
+}
+.circle {
+
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  background-image: radial-gradient(
+    circle at 21% 50%,
+    #38393d,
+    #252736 0%,
+    #333336
+  );
+}
+.currency-wrapper {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  color: wheat;
+  background-color: red;
+}
+.prices-container {
+  position: relative;
+  top: 0;
+  background-image: radial-gradient(
+    circle at 0% 0%,
+    #1b1b1b,
+    #242529 51%,
+    #1d1e26
+  );
+  width: 100vw;
+  height: 175px;
+  /* background-color: rgba(39, 39, 39, 0.726); */
+}
+
+
+
+
+#daily,
+#weekly,
+#monthly {
+  color: wheat;
+}
+
+.price-image {
+  max-width: 75px;
+  max-height: 75px;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+}
+.hidden2 {
+  opacity: 0;
+  display: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+}
+
+.results-container {
+  /* background: linear-gradient(0deg, rgb(27, 27, 27) 65%, rgb(243, 11, 119) 150%); */
+  width: 100vw;
+  height: auto;
+}
+#calculate-btn:hover, #calculate-btn:active, #calculate-btn:focus {
+  opacity: .7;
+  background-color: #861142;
+  border: 0;
+}
+#calculate-btn, #element-btn {
+  border: 0;
+  position: relative;
+  left: 5px;
+  top: 12.5px;
+  height: 35px;
+  background-color: #861142;
+  border: 0;
+}
+
+
+.result-card {
+  text-align: center;
+  margin-bottom: 2.25rem;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 25, 28, 0.329) 65%,
+    rgb(14, 14, 14) 120%
+  );
+  border-radius: 5%;
+  box-shadow: 5px 5px 15px 5px #00000080;
+}
+.userInput {
+  width: 10%;
+}
+.div {
+  padding-top: 45px;
+  color: white;
+}
+.element-image {
+
+  width: 50%;
+  height: 200px;
+  max-width: 100%;
+}
