@@ -42,6 +42,7 @@ $(".userInput").keyup(function (event) {
       $(resultCard).css('height', '325px')
   }
 });
+
 $("#calculate-btn").click(function () {
   searchArea.hidden;
   splash.classList.add('hideSplash')
