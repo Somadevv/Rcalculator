@@ -550,14 +550,9 @@ $(document).ready(function () {
         $("#filter-records").html("");
         return;
       }
-      6
-  
       prices.wax = formatNumbers(prices.wax, 2);
-    
       prices.aether = formatNumbers(prices.aether, 3);
-    
       var regex = new RegExp(searchField, "i");
-  
       var output = '<div class="elem-flex">';
       var count = 1;
       $.each(data, function (key, val) {
@@ -566,20 +561,17 @@ $(document).ready(function () {
           usdtResult = formatNumbers(usdtResult, 2);
           output += `
           <div class="well">
-    
               <div class="element-title"><h5>
               ${val.name}</h5>
                   <img class="element-image" src="${val.image}" alt="${val.name}" />
               </div>
               <div class="">
-         
                   <img class="searched-price-image" src="assets/images/aether.png" alt="Card image cap"> <p class=" inline-block">${val.cost}</p></br>
                   <img class="searched-price-image" src="assets/images/wax.png" alt="Card image cap">
                   <p class="inline-block">${val.cost * prices.aether}</p>
                   <img class="searched-price-image inline-block" src="assets/images/usdt.png" alt="Card image cap">
                   <p class="inline-block">${usdtResult}</p>
               </div>
-             
           </div>`
         }
       });

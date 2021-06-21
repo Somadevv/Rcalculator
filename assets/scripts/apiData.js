@@ -39,12 +39,12 @@ input.addEventListener("keyup", function (event) {
 $(".userInput").keyup(function (event) {
   if (event.keyCode === 13) {(
       $("#calculate-btn").click());
-
       $(resultCard).css('height', '325px')
   }
 });
 $("#calculate-btn").click(function () {
   searchArea.hidden;
+  splash.classList.add('hideSplash')
   elementIsClicked = true;
   event.preventDefault();
   document.getElementById("calculate-btn").click();

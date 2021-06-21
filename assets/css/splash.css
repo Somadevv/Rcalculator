@@ -1,3 +1,33 @@
-.main-content {
-    display: flex;
+* {
+    font-family: "Righteous", "Roboto";
+    color: wheat;
+}
+.price-image {
+    margin-bottom: 10px;
+}
+.splash-screen {
+    text-align: center;
+    width: 100vw;
+    height: 94vh;
+}
+.splash-title {
+    background-image: radial-gradient(
+    circle at 0% 0%,
+    #1b1b1b,
+    #242529 51%,
+    #1d1e26
+  );
+    height: 100px;
+    font-size: 20px;
+
+}
+
+.splash-text {
+    font-size: 15px;
+
+}
+.box {
+    text-align: center;
+    height: 150px;
+    margin-bottom: 10px;
 }

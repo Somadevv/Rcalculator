@@ -1,15 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
-* {
-}
-:root {
-  /*  Usage var(--blue)*/
-  --main: #ff1e7c;
-  --bg: #dddddd;
-}
+
 
 body {
-
   background-image: radial-gradient(
     circle at 21% 50%,
     #38393d,
@@ -78,21 +71,19 @@ position: absolute;
   /* background-color: rgba(39, 39, 39, 0.726); */
 }
 
-
-
-
 #daily,
 #weekly,
 #monthly {
   color: wheat;
 }
-
 .price-image {
   max-width: 75px;
   max-height: 75px;
   margin-top: 10px;
 }
-
+.hideSplash {
+  display: none;
+}
 .hidden {
   display: none;
   color: rgb(255, 255, 255);
@@ -571,7 +562,7 @@ position: absolute;
   hr {
     opacity: .3;
     border-top: .1px solid rgba(243, 243, 243, 0.616);
-    width: 3  0%;
+    width: 30%;
     position: relative;
     bottom: 20px;
     margin-bottom: -3px;
@@ -739,11 +730,9 @@ position: absolute;
     #pickaxe, #crystal {
       width: 100px;
       height: 100px;
-  
-  
     }
     #pickaxe {
-      margin-left: 200px;
+      margin-left: 50px;
     }
   
   
