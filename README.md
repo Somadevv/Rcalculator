@@ -37,14 +37,35 @@ The world of NFTs (Non fungible tokens) are increasingly becoming more and more 
 #### Splashscreen
 
 <img src="assets/images/readme/wireframes/splash_desktop.png" alt="aether" width="250" height="200"/>
-<img src="assets/images/readme/wireframes/splash_tablet.png" alt="aether" width="150" height="200"/>
-<img src="assets/images/readme/wireframes/splash_mobile.png" alt="aether" width="100" height="200"/>
+<img src="assets/images/readme/wireframes/splash_tablet.png" alt="aether" width="175" height="200"/>
+<img src="assets/images/readme/wireframes/splash_mobile.png" alt="aether" width="125" height="200"/>
 
 ### Homepage
 
 <img src="assets/images/readme/wireframes/homepage_desktop.png" alt="aether" width="250" height="200"/>
-<img src="assets/images/readme/wireframes/homepage_tablet.png" alt="aether" width="170" height="200"/>
-<img src="assets/images/readme/wireframes/homepage_mobile.png" alt="aether" width="100" height="200"/>
+<img src="assets/images/readme/wireframes/homepage_tablet.png" alt="aether" width="175" height="200"/>
+<img src="assets/images/readme/wireframes/homepage_mobile.png" alt="aether" width="125" height="200"/>
+
+
+# The Surface Plane
+### Design
+
+**Colour Scheme**
+The main background colour is a gradient of the following colours (HEX) **#38393d**, **#252736**, **#333336**
+
+The main website text is cream
+
+All custom heading text is a deep shade of red #861142
+
+**Typography**
+The main title/headings on this web application use a custom google font called 'Righteous' font while the rest of the websites content uses the 'Roboto' font.
+
+**Imagery**
+The **AEHTER** image was taken from [RPLANET](https://rplanet.io)
+
+The **WAX** & **USDT** images were taken from [Google](https://google.co.uk)
+
+The custom tooL icons for the mining power & elements were made by my graphics designer 'GNARLY'
 
 
 
@@ -61,7 +82,7 @@ The world of NFTs (Non fungible tokens) are increasingly becoming more and more 
 #### Existing features
 * **Live price feed**
     * A live price feed of both currencies used in throughout the web application, this displays both the **AEHTER** & **WAX** live prices updated every 10 seconds. The live price of Aether is taken from [Alcor Exchange](https://wax.alcor.exchange/trade/aether-e.rplanet_wax-eosio.token) using the [Alcor API](https://docs.alcor.exchange/developers-api). The live price of Wax is taken from the [Coingekko](https://www.coingecko.com/en/coins/wax) using the [Coingekko API](https://www.coingecko.com/en/api#explore-api)
-    <img src="assets/images/readme/liveprices.png" alt="mining power" width="500" height="100"/>
+    <img src="assets/images/readme/liveprices.png" alt="mining power" width="500" height="75"/>
 
 
 
@@ -72,20 +93,41 @@ The world of NFTs (Non fungible tokens) are increasingly becoming more and more 
 
 * **Mining tool**
     * A feature to allow users to calculate their **AETHER, WAX, USD** earnings which follows an algorithm based on the live prices.
-    <img src="assets/images/readme/miningpower_result.png" alt="mining power" width="500" height="200"/>
+    <img src="assets/images/readme/miningpower_result.png" alt="mining power" width="500" height="175"/>
 
 
 
 * **Elements tool**
     * A feature to allow users to search any existing element found on
     [RPLANET](https://rplanet.io/all_elements) and see the cost of that element from **AETHER** > **WAX** > **USD**
-<img src="assets/images/readme/elements.png" alt="mining power" width="500" height="200"/>
+<img src="assets/images/readme/elements.png" alt="mining power" width="500" height="175"/>
 
 #### Features Left to Implement
 * **WAX Sign-in**
     * Allows users to login directly to their WAX account to pull their data automatically
 * **Tool Automation**
     * Retrieve data from user account and base tool algorithms on user data
+
+# Technologies
+
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+    * This project uses HTML as the main language used to complete the structure of the Website.
+
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+    * This project uses custom written CSS to style the Website.
+* [Google Fonts](https://fonts.google.com) 
+    * Google fonts are used throughout the project to import the Inter and Bevan fonts.
+* [GitHub](https://github.com)
+    * GitHub is the hosting site used to store the source code for the Website.
+
+* [Git](https://git-scm.com/)
+    * Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
+
+* [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/)
+    * Google chromes built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
+
+* [balsamiq Wireframes](https://balsamiq.com/wireframes/)
+    * This was used to create wireframes for 'The Skeleton Plane' stage of UX design.
 
 # Testing
 
@@ -111,6 +153,36 @@ The world of NFTs (Non fungible tokens) are increasingly becoming more and more 
         * **typewriter.css**
 
         <img src="assets/images/readme/TYPEWRITER_results.png" alt="mining power" width="500" height="200"/>
+
+
+# Depolyment
+
+#### To deploy this site locally follow the steps below:
+* Click on the green 'code' button on the GamesDirect repository
+
+* Select one of two options 'Download as ZIP', 'Open with GitHub Desktop'
+
+* If 'Download as ZIP' chosen follow the steps below:
+
+* Open the folder downloaded, un ZIP the folder using a third party application like WinZip, WinRar
+
+* Open the unzipped folder into your IDE (integrated development environment)
+
+* For VSCode users, you can download the 'Live server' plugin and launch the project using a local server
+
+* For users using any other IDE you will need to find out how to launch this project on the respective IDE
+
+* Open your IDE of choice and open a terminal window in a directory of your choice
+
+* Use the 'git clone' command in terminal followed by the copied git URL.
+
+* A clone of the project will be created locally on your machine.
+
+#### This site was deployed to GitHub pages. The steps to deploy are as follows:
+* In the GitHub repository, navigate to the Settings tab
+* From the source section drop-down menu, select the Master Branch
+* Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+* The live link can be found [here](https://rcalculator.net/)
 
 
         
