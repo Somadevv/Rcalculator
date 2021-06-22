@@ -276,4 +276,6 @@ pickaxeIcon.addEventListener('click', () => {
 
 
 
+
+
   

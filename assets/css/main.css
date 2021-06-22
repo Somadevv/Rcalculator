@@ -38,6 +38,20 @@ position: absolute;
   color: wheat;
 
 }
+
+.values{
+  text-align: center;
+  width: 33%;
+  justify-content: space-around;
+}
+
+.search-bar input{
+  width: 30%;
+}
+
+
+
+
 .circle {
   line-height: 100px;
   width: 100px;
@@ -226,10 +240,7 @@ position: absolute;
     height: auto;
   }
   
-  .values {
-    color: wheat;
-    /* background: #FFFFAA; */
-  }
+ 
   .inline-block {
     display: inline-block;
   }
@@ -493,13 +504,14 @@ position: absolute;
   
   
   .elem-flex {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: space-around;
   }
   
   .well {
     margin: auto;
-    width: 85%;
     height: auto;
     margin-bottom: 25px;
     text-align: center;
@@ -769,7 +781,6 @@ position: absolute;
     }
     .well {
       margin: 2.5%;
-      width: 45%;
       text-align: center;
       border-radius: 5%;
       background: linear-gradient(0deg, rgba(34, 25, 28, 0.329) 65%, rgb(14, 14, 14) 120%);
@@ -827,9 +838,6 @@ position: absolute;
       height: 150px;
     }
   
-    .well {
-      width: 25%;
-  }
   }
   
   
