@@ -18,7 +18,7 @@ Before this was created, there was no easy way to calculate your earnings per da
     * [Typography](#Typography)
     * [Imagery](#Imagery)
 * [Features](#Features)
-    * [Currencies](#Currencies)
+    * [Currencies](#Currencies-used-in-this-project)
     * [Tools & Live prices](#Tools&live-prices)
 * [Technologies](#Technologies)
 * [Testing](#Testing)
