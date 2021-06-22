@@ -87,7 +87,7 @@ The custom tool icons for the mining power & elements were made by my graphics d
 
 # Features
 
-### **Currencies**
+### **Currencies used in this project**
 
 | <img src="assets/images/aether.png" alt="aether" width="50" height="50"/> | <img src="assets/images/wax.png" alt="aether" width="50" height="50"/> | <img src="assets/images/usdt.png" alt="aether" width="50" height="50"/> |
 | :---: |  :---:  |  :---: |
