@@ -110,7 +110,7 @@ The custom tool icons for the mining power & elements were made by my graphics d
 
 * **Tool selection**
     * A feature to allow users to easily change from the mining power calculator tool, to the elements tool
-    <img src="assets/images/readme/toolselector.png" alt="mining power" width="500" height="125"/>
+    <img src="assets/images/readme/toolselector.png" alt="mining power" width="200" height="100"/>
 
 
 * **Mining tool**
@@ -162,6 +162,10 @@ The custom tool icons for the mining power & elements were made by my graphics d
 | T3 | Tool selection buttons | To test the tool selectors I switched between both tools multiples times to see if it would cause it to break which it did not | <img src="assets/images/readme/testing/Testresult2.png" alt="mining power" width="100" height="45"/> |
 | T4 | Live API data (Error/offline) | To test the Live API data I purposely disconnected the api calls to see the result. In this case it will display "Offline" in the live price section to let the user know the servers are down and the tool cannot be used  for this period of time| <img src="assets/images/readme/testing/Testresult3.png" alt="mining power" width="100" height="75"/> |
 | T5 | Tool 1 - Mining power (Input) | To test the mining power tool i inputted various data types into the input field. If a letter is inputted into the field the results return nothing as expected, if a special character is inputted into the field the results return nothing as expected | <img src="assets/images/readme/testing/Testresult4.png" alt="mining power" width="150" height="50"/> |
+| T2 | Live API data | To test the live API data was working correctly i monitored the change in the live price feed. This is expected to update every 10 seconds |  <img src="assets/images/readme/Testing/Testresult1.png" alt="mining power" width="100" height="75"/>  |
+| T3 | Tool selection buttons |  | <img src="assets/images/readme/Testing/Testresult2.png" alt="mining power" width="100" height="45"/> |
+| T4 | Live API data (Error/offline) |  |  |
+| T5 | Tool 1 - Mining power (Input) |  |  |
 | T5.A | Tool 1 - Mining power (Result) |  |  |
 | T6 | Tool 2 - Elements (Input) |  |  |
 | T6.A | Tool 2 - Elements (Result) |  |  |
@@ -178,6 +182,9 @@ The custom tool icons for the mining power & elements were made by my graphics d
 * T5 - Splash screen
 
 * T6 - Splash screen
+
+
+
 
 #### Validator Tests
 
