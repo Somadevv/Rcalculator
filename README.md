@@ -158,8 +158,8 @@ The custom tool icons for the mining power & elements were made by my graphics d
 | Test | Title | Process | Result | 
 | ----------- | ----------- | ----------- | ------- | 
 | T1 | Splash screen | To test the splash screen was working correctly I ensured firstly that it responded well to all devices (mobile/tablet/desktop). I then tested the exit button to make sure it takes the user to the homepage | Working as expected |
-| T2 | Live API data | To test the live API data was working correctly i monitored the change in the live price feed. This is expected to update every 10 seconds |  <img src="assets/images/readme/testing/Testresult1.png" alt="mining power" width="100" height="75"/>  |
-| T3 | Tool selection buttons |  | <img src="assets/images/readme/testing/Testresult2.png" alt="mining power" width="100" height="45"/> |
+| T2 | Live API data | To test the live API data was working correctly i monitored the change in the live price feed. This is expected to update every 10 seconds |  <img src="assets/images/readme/Testing/Testresult1.png" alt="mining power" width="100" height="75"/>  |
+| T3 | Tool selection buttons |  | <img src="assets/images/readme/Testing/Testresult2.png" alt="mining power" width="100" height="45"/> |
 | T4 | Live API data (Error/offline) |  |  |
 | T5 | Tool 1 - Mining power (Input) |  |  |
 | T5.A | Tool 1 - Mining power (Result) |  |  |
