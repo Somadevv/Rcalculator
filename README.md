@@ -1,8 +1,10 @@
 # Rcalculator
 
-Rcalculator is a tool created to help users easily calculate their mining power based on the NFT crypto project [RPLANET](https://rplanet.io)
+<img src="assets/images/rlogo.png" alt="aether" width="500" height="500"/>
 
-Before this was created, there was no easy way to calculate your earnings per day/week/month, so I created this handy tool to do all of the work for you!
+Rcalculator is a tool created to help users easily calculate their mining power based on the NFT crypto project [RPLANET](https://rplanet.io), they can also check to the current value of all the elements 
+
+Before this was created, there was no easy way to calculate your earnings per daily, weekly and monthly, so I created this handy tool to do all the work for you!
 
 # Table of contents
 
@@ -18,7 +20,7 @@ Before this was created, there was no easy way to calculate your earnings per da
     * [Typography](#Typography)
     * [Imagery](#Imagery)
 * [Features](#Features)
-    * [Currencies](#Currencies)
+    * [Currencies](#Currencies-used-in-this-project)
     * [Tools & Live prices](#Tools&live-prices)
 * [Technologies](#Technologies)
 * [Testing](#Testing)
@@ -34,12 +36,12 @@ Before this was created, there was no easy way to calculate your earnings per da
 
 ## The Strategy Plane
 
-The world of NFTs (Non fungible tokens) are increasingly becoming more and more popular by the day, they're the hottest topic in the crypto world right now! As a follower of the [RPLANET](https://rplanet.io) project, I found it very tedious to have to manually calculate my earnings, that's where **Rcalculator** comes in.
+The world of Non fungible tokens or NFTs is becoming increasingly popular by the day, inface they're the hottest topic in the crypto world right now! As a follower of the [RPLANET](https://rplanet.io) project, I found it very tedious to have to manually calculate my earnings, that's where **Rcalculator** comes in.
 
-**Rcalculator** was created for [RPLANET](https://rplanet.io) users. The aim is to provide users with an easy to use tool that will calculate and display how much their **AEHTER** per hour is earning them and convert it into other currencies such as **WAX** & **USDT**.
+**Rcalculator** was created for the NFT game [RPLANET](https://rplanet.io) with the aim of delivering a simplified tool that will calculate and display how much **AEHTER** per hour users are mining and convert it into other currencies such as **WAX** & **USDT**. **Rcalculator** has been created to also provide a list of all the elements but with an added feature, this being the **elemental tool** automatically calculated the price of each individual element and converts the price in **AETHER** to **WAX** & **USDT** so users can easily see how much the converted price costs.
 
 ## Site goals
-* Give users an easy to use calculation tool for their **AETHER** mining power
+* Give users an easy-to-use calculation tool for their **AETHER** mining power
 * Help users keep track of their crypto earnings
 * Help users easily see the price of elements in other currency formats
 
@@ -68,17 +70,17 @@ The world of NFTs (Non fungible tokens) are increasingly becoming more and more 
 # The Surface Plane
 ## Design
 
-#### **Colour Scheme**
+### **Colour Scheme**
 The main background colour is a gradient of the following colours (HEX) **#38393d**, **#252736**, **#333336**
 
-The main website text is cream
+The main website text is the colour “wheat”
 
 All custom heading text is a deep shade of red #861142
 
-#### **Typography**
+### **Typography**
 The main title/headings on this web application use a custom google font called 'Righteous' font while the rest of the websites content uses the 'Roboto' font.
 
-#### **Imagery**
+### **Imagery**
 The **AEHTER** image was taken from [RPLANET](https://rplanet.io)
 
 The **WAX** & **USDT** images were taken from [Google](https://google.co.uk)
@@ -87,7 +89,7 @@ The custom tool icons for the mining power & elements were made by my graphics d
 
 # Features
 
-### **Currencies**
+### **Currencies used in this project**
 
 | <img src="assets/images/aether.png" alt="aether" width="50" height="50"/> | <img src="assets/images/wax.png" alt="aether" width="50" height="50"/> | <img src="assets/images/usdt.png" alt="aether" width="50" height="50"/> |
 | :---: |  :---:  |  :---: |
@@ -117,8 +119,6 @@ The custom tool icons for the mining power & elements were made by my graphics d
     * A feature to allow users to calculate their **AETHER, WAX, USD** earnings which follows an algorithm based on the live prices
     <img src="assets/images/readme/miningpower_result.png" alt="mining power" width="500" height="175"/>
 
-
-
 * **Elements tool**
     * A feature to allow users to search any existing element found on
     [RPLANET](https://rplanet.io/all_elements) and see the cost of that element from **AETHER** > **WAX** > **USD**
@@ -132,8 +132,11 @@ The custom tool icons for the mining power & elements were made by my graphics d
 
 # Technologies
 
-* [HTML](https://en.wikipedia.org/wiki/HTML)
-    * This project uses HTML as the main language used to complete the structure of the Website.
+* [Alcor API](https://docs.alcor.exchange/developers-api)
+    * This project uses the Alcor API to gather the live price of the **AETHER** currency used in this project.
+
+* [Coingekko API](https://www.coingecko.com/en/api)
+    * This project uses the Coingekko API to gather the live price of the **WAX & USDT** currencies used in this project.
 
 * [CSS](https://en.wikipedia.org/wiki/CSS)
     * This project uses custom written CSS to style the Website.
@@ -153,17 +156,24 @@ The custom tool icons for the mining power & elements were made by my graphics d
 
 # Testing
 
-### Feature testing
-
 | Test | Title | Process | Result | 
 | ----------- | ----------- | ----------- | ------- | 
-| T1 | Splash screen | To test the splash screen was working correctly I ensured firstly that it responded well to all devices (mobile/tablet/desktop). I then tested the exit button to make sure it takes the user to the homepage | Working as expected |
-| T2 | Live API data | To test the live API data was working correctly i monitored the change in the live price feed. This is expected to update every 10 seconds |  <img src="assets/images/readme/Testing/Testresult1.png" alt="mining power" width="100" height="75"/>  |
-| T3 | Tool selection buttons | To test the tool selectors I switched between both tools multiples times to see if it would cause it to break which it did not | <img src="assets/images/readme/Testing/Testresult2.png" alt="mining power" width="100" height="45"/> |
-| T4 | Live API data (Error/offline) | To test the Live API data I purposely disconnected the api calls to see the result. In this case it will display "Offline" in the live price section to let the user know the servers are down and the tool cannot be used  for this period of time| <img src="assets/images/readme/Testing/Testresult3.png" alt="mining power" width="100" height="75"/> |
-| T5 | Tool 1 - Mining power | To test the mining power tool I input various data types into the input field. If a letter is inputted into the field the results return nothing as expected, if a special character is inputted into the field the results return nothing as expected | <img src="assets/images/readme/Testing/Testresult4.png" alt="mining power" width="150" height="50"/> |
-| T6 | Tool 2 - Elemental | To test the Elemental tool I changed various letter inputs to see if they matched the elements database. No errors were found during this process | <img src="assets/images/readme/Testing/Testresult5.png" alt="mining power" width="150" height="50"/> |
-| T7 | Responsive design | To test the websites stability with responsive design, I tested multiple browsers including: Firefox, Chrome, IE & Safari. All browsers work well with all native devices (mobile/tablet/desktop) |  |
+| T1 | Splash screen | The splash screen was first tested to ensure suitability and accuracy so that it responded well to all devices (mobile/tablet/desktop). Secondly the exit button was verified to ensure it takes the user to the homepage | Working as expected |
+| T2 | Live API data | To test the live API data was working correctly any changes are monitored and reflected in the live price feed. This is expected to update every 10 seconds. |  <img src="assets/images/readme/Testing/Testresult1.png" alt="mining power" width="100" height="75"/>  |
+| T3 | Tool selection buttons | The tool selectors were tested by switching between both tools multiples times to see if it would cause any damage or interference, after testing the tool selectors they proved sustainably effective. | <img src="assets/images/readme/Testing/Testresult2.png" alt="mining power" width="100" height="45"/> |
+| T4 | Live API data (Error/offline) | To test the Live API data the API was purposely disconnected so the results were observable. In this case it will display "Offline" in the live price section to let the user know the servers are down and the tool cannot be used for this period.| <img src="assets/images/readme/Testing/Testresult3.png" alt="mining power" width="75" height="75"/> |
+| T5 | Tool 1 - Mining power |The mining tool was tested by storing various data types into the input field. When a letter or a special character is inputted into the field the results return nothing as expected.| <img src="assets/images/readme/Testing/Testresult4.png" alt="mining power" width="150" height="50"/> |
+| T6 | Tool 2 - Elemental | To test the Elemental tool various letter inputs were altered to observe if they matched the elements within the database, subsequently an analysation of this test clearly represented no errors within this process. | <img src="assets/images/readme/Testing/Testresult5.png" alt="mining power" width="150" height="50"/> |
+| T7 | Responsive design | To test the websites stability and ensuring it covers responsive design, the respective browser developer tools were used on the following browsers: Firefox, Chrome, IE & Safari and enabled the device viewer to allow change in the viewport. All browsers work well with all native devices (mobile/tablet/desktop) |
+
+# Errors
+| Error | Title | Analysis | 
+| ----------- | ----------- | ----------- | 
+| E1 | Broken exit button | Upon pressing the 'Got it!' button the Splash screen wouldn't dissapear and would stay in view, to fix this issue some Javascript logic was added, this was to add a 'hidden' class to the parent element that will add a CSS property ('Display: none') when the user clicks on the exit button, I did this by adding an event listener on the exit button |
+| E2 | Server flooding | The function that handles the API calls had a interval of 5 seconds, this meant every user that visits Rcalculator makes a call to the server endpoint every 5 seconds, this in turn flooded the endpoint and blocked our services. To fix this problem the interval was changed to 30 seconds |
+| E3 | DOM overlapping | When adding the elemental tool to the project there was an issue with displaying & hiding the main content areas. When toggling between each tool the content would overlap one another, to fix this issue I seperated each of the tools into their own containers and added event listeners onto the buttons to hide the opposite tool to the DOM | 
+| E4 | Search filter not working | The elemental tool's search filter wasn't working correctly. It would break when the user input field was deleted and didn't display anything to the DOM. To fix this issue I used an online source found on Stack overflow and re-wrote the functionality that controls the search filter
+|
 
 #### Validator Tests
 
@@ -198,9 +208,9 @@ The custom tool icons for the mining power & elements were made by my graphics d
 
 * Select one of two options 'Download as ZIP', 'Open with GitHub Desktop'
 
-* If 'Download as ZIP' chosen follow the steps below:
+**If 'Download as ZIP' has been chosen, follow the steps below:**
 
-* Open the folder downloaded, un ZIP the folder using a third party application like WinZip, WinRar
+* Once the folder has been downloaded, un-ZIP the folder using a third-party application like WinZip, WinRAR
 
 * Open the unzipped folder into your IDE (integrated development environment)
 
@@ -208,9 +218,9 @@ The custom tool icons for the mining power & elements were made by my graphics d
 
 * For users using any other IDE you will need to find out how to launch this project on the respective IDE
 
-* Open your IDE of choice and open a terminal window in a directory of your choice
+* Open your IDE of choice then open its terminal window (CLI) and locate the projects directory 
 
-* Use the 'git clone' command in terminal followed by the copied git URL.
+* Use the 'git clone' command in the terminal followed by the copied git URL
 
 * A clone of the project will be created locally on your machine.
 
@@ -224,6 +234,7 @@ This site was deployed to GitHub pages. The steps to deploy are as follows:
 
 # Credits
 
+* Search filter functionality taken from [Stack overflow](https://stackoverflow.com/questions/47224846/search-box-for-json-data)
 * Currency images taken from [Google](https://google.co.uk)
 * API Data was taken from [Alcor API](https://docs.alcor.exchange/developers-api) & [Coingekko](https://www.coingecko.com/en/api)
 
@@ -234,8 +245,7 @@ This site was deployed to GitHub pages. The steps to deploy are as follows:
 
 * Mr Bim (Slack community member) helped write some of the algorithm logic in this project
 
-* GNARLY (Close friend) helped with tool icon designs used in this project
+* Gnarly (Close friend) helped with tool icon designs used in this project
 
 
 
-        
