@@ -44,7 +44,7 @@ $(".userInput").keyup(function (event) {
 
 $("#calculate-btn").click(function () {
   searchArea.hidden;
-  // splash.classList.add('hideSplash')
+  splash.classList.add('hideSplash')
   elementIsClicked = true;
   event.preventDefault();
   document.getElementById("calculate-btn").click();

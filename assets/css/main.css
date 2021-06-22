@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 
-
 body {
   background-image: radial-gradient(
     circle at 21% 50%,
@@ -26,7 +25,7 @@ html,body
     overflow-x: hidden; 
 }
 .currency-symbol {
-position: absolute;
+  position: absolute;
   margin: auto;
   margin-top: 18px;
   width: 50%;
@@ -38,7 +37,6 @@ position: absolute;
   color: wheat;
 
 }
-
 .values{
   text-align: center;
   width: 33%;
@@ -88,7 +86,6 @@ position: absolute;
     #1d1e26
   );
   width: 100vw;
-  /* background-color: rgba(39, 39, 39, 0.726); */
 }
 
 #daily,
@@ -117,7 +114,6 @@ position: absolute;
 }
 
 .results-container {
-  /* background: linear-gradient(0deg, rgb(27, 27, 27) 65%, rgb(243, 11, 119) 150%); */
   width: 100vw;
   height: auto;
 }
@@ -135,7 +131,6 @@ position: absolute;
   background-color: #861142;
   border: 0;
 }
-
 
 .result-card {
   text-align: center;
@@ -424,7 +419,6 @@ position: absolute;
     position: relative;
     bottom: 50px;
     color: wheat;
-    /* text-align: right; */
     font-size: 1em;
     margin-top: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -500,8 +494,7 @@ position: absolute;
     color: wheat;
     text-align: center;
   }
-  /* -----------------------FOOTER */
-  
+
   
   .elem-flex {
     margin: auto;
@@ -567,8 +560,6 @@ position: absolute;
     width: 100%;
     position: relative;
     bottom: 10px;
-  
-    /* margin-bottom: -3px; */
   }
   hr {
     opacity: .3;

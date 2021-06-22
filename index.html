@@ -16,10 +16,12 @@
 </head>
 
 <body>
-  <!-- <div class="splash-screen">
+  <!-- INTRODUCTION SPLASH SCREEN -->
+  <div class="splash-screen">
     <div class="splash-title">
       <h5 class="splash-text">Rcalculator is a simp!</h5>
     </div>
+    <div class="splash-body">
     <div class="box">
       <img class="price-image" src="assets/images/aether.png" alt="Card image cap">
       <h6 class="splash-text">AETHER</h6>
@@ -33,9 +35,10 @@
       <h6 class="splash-text">USDT</h6>
     </div>
     <button id="splash">Got it!</button>
-  </div> -->
-
-  <main id="main">
+  </div>
+</div>
+<!-- TOP BAR INCLUDES AETHER & WAX LIVE PRICE FEED -->
+  <main id="main" class="hideSplash">
     <div class="prices-container">
       <div class="grid-flex">
         <div class="col">
@@ -85,12 +88,14 @@
         </div>
       </div>
     </div>
+    <!-- TOOL SELECTORS -->
     <div class="toggle-center">
       <div class="toggle-icon-container">
         <img id="pickaxe" src="assets/images/mining.png" alt="">
         <img id="crystal" src="assets/images/minerals.png" alt="">
       </div>
     </div>
+    <!-- TOOL INTRODUCTORY INFORMATION -->
     <div id="calculate-area" class="">
       <div class="type-writer-container ">
         <br>
@@ -105,6 +110,7 @@
           <button type="button" class="btn btn-dark" disabled id="calculate-btn">Go</button>
         </div>
       </div>
+      <!-- RESULTS DRAWING AREA -->
       <div class="results-container container">
         <div class="row">
           <div class="col-md-4 col-sm-4">
@@ -135,7 +141,6 @@
                 <div class="card-body">
                   <div class="currency-container">
                     <div class="currency-icon">
-
                     </div>
                     <span class="toggled white">WAX</span>
                     <div class="currency-icon"></div>
@@ -174,6 +179,7 @@
         </div>
       </div>
     </div>
+    <!-- ELEMENTAL TOOL -->
     <div id="search-area" class="hidden2">
       <div id="element-searchbar" class="type-writer-container data"><br>
         <hr>
@@ -183,17 +189,13 @@
             placeholder="Search">
         </div>
       </div>
-
       <div id="filter-records"></div>
       <br>
       <h3 class="newest-elements">Recently Discovered!</h3>
       <hr>
-
       <div id="recent-elements">
-  
+  <!-- RECENTLY DISCOVERED ELEMENTS -->
         <div class="elem-flex">
-          
-          <!-- end of one card -->
           <div class="well">
             <div class="element-title inline-block">
               <h5>Broom</h5>
@@ -290,12 +292,11 @@
               <p class="inline-block">340,000</p><br>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </main>
-
+<!-- SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="assets/scripts/app.js"></script>

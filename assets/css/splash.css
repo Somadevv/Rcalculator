@@ -5,8 +5,9 @@
 .price-image {
     margin-bottom: 10px;
 }
+
 .splash-screen {
-    text-align: center;
+  
     width: 100vw;
     height: 94vh;
 }
@@ -21,14 +22,18 @@
     font-size: 20px;
 
 }
-
+.splash-body {
+    display: flex;
+}
 .splash-text {
     padding-top: 3rem;
     font-size: 1.5rem;
 
 }
 .box {
-    text-align: center;
-    height: 150px;
+    background-color: red;
+    margin: 0 auto;
+    width: 50%;
+    height: 100px;
     margin-bottom: 10px;
 }
