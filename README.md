@@ -117,8 +117,6 @@ The custom tool icons for the mining power & elements were made by my graphics d
     * A feature to allow users to calculate their **AETHER, WAX, USD** earnings which follows an algorithm based on the live prices
     <img src="assets/images/readme/miningpower_result.png" alt="mining power" width="500" height="175"/>
 
-
-
 * **Elements tool**
     * A feature to allow users to search any existing element found on
     [RPLANET](https://rplanet.io/all_elements) and see the cost of that element from **AETHER** > **WAX** > **USD**
@@ -136,7 +134,7 @@ The custom tool icons for the mining power & elements were made by my graphics d
     * This project uses the Alcor API to gather the live price of the **AETHER** currency used in this project.
 
 * [Coingekko API](https://www.coingecko.com/en/api)
-    * This project uses the Alcor API to gather the live price of the **AETHER** currency used in this project.
+    * This project uses the Coingekko API to gather the live price of the **WAX & USDT** currencies used in this project.
 
 * [CSS](https://en.wikipedia.org/wiki/CSS)
     * This project uses custom written CSS to style the Website.
