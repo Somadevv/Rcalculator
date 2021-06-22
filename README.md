@@ -166,6 +166,13 @@ The custom tool icons for the mining power & elements were made by my graphics d
 | T6 | Tool 2 - Elemental | To test the Elemental tool various letter inputs were altered to observe if they matched the elements within the database, subsequently an analysation of this test clearly represented no errors within this process. | <img src="assets/images/readme/Testing/Testresult5.png" alt="mining power" width="150" height="50"/> |
 | T7 | Responsive design | To test the websites stability and ensuring it covers responsive design, the respective browser developer tools were used on the following browsers: Firefox, Chrome, IE & Safari and enabled the device viewer to allow change in the viewport. All browsers work well with all native devices (mobile/tablet/desktop)
 (mobile/tablet/desktop) |  |
+
+## Errors
+| Test | Title | Error | Analysis | 
+| ----------- | ----------- | ----------- | ------- | 
+| T1 | Splash screen | Upon exiting the Splash screen it wouldn't dissapear and would stay in view, to fix this issue I had to write some Javascript logic to add a 'hidden' class to the parent element when the user clicks on the exit button |
+
+
 #### Validator Tests
 
 * **HTML**
