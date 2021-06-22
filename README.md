@@ -154,8 +154,6 @@ The custom tool icons for the mining power & elements were made by my graphics d
 
 # Testing
 
-### Feature testing
-
 | Test | Title | Process | Result | 
 | ----------- | ----------- | ----------- | ------- | 
 | T1 | Splash screen | The splash screen was first tested to ensure suitability and accuracy so that it responded well to all devices (mobile/tablet/desktop). Secondly the exit button was verified to ensure it takes the user to the homepage | Working as expected |
@@ -164,13 +162,15 @@ The custom tool icons for the mining power & elements were made by my graphics d
 | T4 | Live API data (Error/offline) | To test the Live API data the API was purposely disconnected so the results were observable. In this case it will display "Offline" in the live price section to let the user know the servers are down and the tool cannot be used for this period.| <img src="assets/images/readme/Testing/Testresult3.png" alt="mining power" width="75" height="75"/> |
 | T5 | Tool 1 - Mining power |The mining tool was tested by storing various data types into the input field. When a letter or a special character is inputted into the field the results return nothing as expected.| <img src="assets/images/readme/Testing/Testresult4.png" alt="mining power" width="150" height="50"/> |
 | T6 | Tool 2 - Elemental | To test the Elemental tool various letter inputs were altered to observe if they matched the elements within the database, subsequently an analysation of this test clearly represented no errors within this process. | <img src="assets/images/readme/Testing/Testresult5.png" alt="mining power" width="150" height="50"/> |
-| T7 | Responsive design | To test the websites stability and ensuring it covers responsive design, the respective browser developer tools were used on the following browsers: Firefox, Chrome, IE & Safari and enabled the device viewer to allow change in the viewport. All browsers work well with all native devices (mobile/tablet/desktop)
-(mobile/tablet/desktop) |  |
+| T7 | Responsive design | To test the websites stability and ensuring it covers responsive design, the respective browser developer tools were used on the following browsers: Firefox, Chrome, IE & Safari and enabled the device viewer to allow change in the viewport. All browsers work well with all native devices (mobile/tablet/desktop) |
 
-## Errors
-| Test | Title | Error | Analysis | 
+# Errors
+| Test | Error | Analysis | 
 | ----------- | ----------- | ----------- | ------- | 
-| T1 | Splash screen | Upon exiting the Splash screen it wouldn't dissapear and would stay in view, to fix this issue I had to write some Javascript logic to add a 'hidden' class to the parent element when the user clicks on the exit button |
+| E1 | Broken exit button | Upon pressing the 'Got it!' button the Splash screen wouldn't dissapear and would stay in view, to fix this issue some Javascript logic was added, this was to add a 'hidden' class to the parent element that will add a CSS property ('Display: none') when the user clicks on the exit button, I did this by adding an event listener on the exit button |
+| E2 | Server flooding | The function that handles the API calls had a interval of 5 seconds, this meant every user that visits Rcalculator makes a call to the server endpoint every 5 seconds, this in turn flooded the endpoint and blocked our services. To fix this problem the interval was changed to 30 seconds |
+| E3 | DOM overlapping | When adding the elemental tool to the project there was an issue with displaying & hiding the main content areas. When toggling between each tool the content would overlap one another, to fix this I seperated each of the tools into their own containers and added event listeners onto the buttons to hide the opposite tool to the DOM | 
+| E4 | Search filter not working | The elemental tool's search filter wasn't working correctly. It would break when the user input field was deleted and didn't display anything to the DOM. To fix this issue I used an online source found on Stack overflow and re-wrote the functionality that controls the search filter
 
 
 #### Validator Tests
