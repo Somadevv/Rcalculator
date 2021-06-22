@@ -68,17 +68,17 @@ The world of Non fungible tokens or NFTs is becoming increasingly popular by the
 # The Surface Plane
 ## Design
 
-#### **Colour Scheme**
+### **Colour Scheme**
 The main background colour is a gradient of the following colours (HEX) **#38393d**, **#252736**, **#333336**
 
 The main website text is the colour “wheat”
 
 All custom heading text is a deep shade of red #861142
 
-#### **Typography**
+### **Typography**
 The main title/headings on this web application use a custom google font called 'Righteous' font while the rest of the websites content uses the 'Roboto' font.
 
-#### **Imagery**
+### **Imagery**
 The **AEHTER** image was taken from [RPLANET](https://rplanet.io)
 
 The **WAX** & **USDT** images were taken from [Google](https://google.co.uk)
