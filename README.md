@@ -1,6 +1,6 @@
-# Rcalculator
+<img src="assets/images/rlogo.png" alt="aether" width="1000" height="750"/>
 
-<img src="assets/images/rlogo.png" alt="aether" width="750" height="750"/>
+# Rcalculator
 
 Rcalculator is a tool created to help users easily calculate their mining power based on the NFT crypto project [RPLANET](https://rplanet.io), they can also check to the current value of all the elements 
 
@@ -145,6 +145,9 @@ The custom tool icons for the mining power & elements were made by my graphics d
 * [GitHub](https://github.com)
     * GitHub is the hosting site used to store the source code for the Website.
 
+* [Canva](https://www.canva.com/)
+    * Canva design was used in order to create the website logo.
+    
 * [Git](https://git-scm.com/)
     * Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
 
