@@ -9,10 +9,28 @@ Before this was created, there was no easy way to calculate your earnings per da
 ## Table of Contents
 * [User Experience Design (UX)](#User-Experience-Design)
     * [The Strategy Plane](#The-Strategy-Plane)
-        * [Site Goals](#Site-Goals)
-        * [User stories](#User-Stories)
+    * [Site Goals](#Site-Goals)
+    * [User stories](#User-Stories)
+    * [Wireframes](#Wireframes)
+* [The Surface Plane](#The-surface-plane)
+    * [Design](#Design)
+    * [Colour scheme](#Colour-scheme)
+    * [Typography](#Typography)
+    * [Imagery](#Imagery)
+* [Features](#Features)
+    * [Currencies](#Currencies)
+    * [Tools & Live prices](#Tools&live-prices)
+* [Technologies](#Technologies)
+* [Testing](#Testing)
+* [Deployment](#Deployment)
+    * [Run locally](#Run-locally)
+    * [Github pages](#Github-pages)
+* [Credits](#Credits)
+    * [Acknowledgements](#Acknowledgements)
 
-# User Experience Design
+
+
+# User Experience Design (UX)
 
 ## The Strategy Plane
 
@@ -48,38 +66,42 @@ The world of NFTs (Non fungible tokens) are increasingly becoming more and more 
 
 
 # The Surface Plane
-### Design
+## Design
 
-**Colour Scheme**
+#### **Colour Scheme**
 The main background colour is a gradient of the following colours (HEX) **#38393d**, **#252736**, **#333336**
 
 The main website text is cream
 
 All custom heading text is a deep shade of red #861142
 
-**Typography**
+#### **Typography**
 The main title/headings on this web application use a custom google font called 'Righteous' font while the rest of the websites content uses the 'Roboto' font.
 
-**Imagery**
+#### **Imagery**
 The **AEHTER** image was taken from [RPLANET](https://rplanet.io)
 
 The **WAX** & **USDT** images were taken from [Google](https://google.co.uk)
 
-The custom tooL icons for the mining power & elements were made by my graphics designer 'GNARLY'
+The custom tool icons for the mining power & elements were made by my graphics designer **'GNARLY'**
 
+# Features
 
-
-## **Currencies**
+### **Currencies**
 
 | <img src="assets/images/aether.png" alt="aether" width="50" height="50"/> | <img src="assets/images/wax.png" alt="aether" width="50" height="50"/> | <img src="assets/images/usdt.png" alt="aether" width="50" height="50"/> |
 | :---: |  :---:  |  :---: |
 | **AETHER** | **WAX** | **USDT** |
- 
 
+#### **There are three currencies used within this website:**
+* **AETHER**
+    * This is a game currency created by the developers at [RPLANET](https://rplanet.io), you can see a live price feed of this currency over at [Alcor](https://wax.alcor.exchange/trade/aether-e.rplanet_wax-eosio.token)
+* **WAX** 
+    * WAX (WAXP) is a purpose-built blockchain that is designed to make e-commerce transactions faster, simpler and safer for every party involved. You can see a live price feed of this currency over at [Coingekko](https://www.coingecko.com/en/coins/wax)
+* **USDT** 
+    * USDT is a stablecoin (stable-value cryptocurrency) that mirrors the price of the U.S. dollar, issued by a Hong Kong-based company Tether. The token’s peg to the USD is achieved via maintaining a sum of dollars in reserves that is equal to the number of USDT in circulation. You can see a live price feed of this currency over at [Coingekko](https://www.coingecko.com/en/coins/tether)
 
-# Features
-
-#### Existing features
+## Tools & Live prices
 * **Live price feed**
     * A live price feed of both currencies used in throughout the web application, this displays both the **AEHTER** & **WAX** live prices updated every 10 seconds. The live price of Aether is taken from [Alcor Exchange](https://wax.alcor.exchange/trade/aether-e.rplanet_wax-eosio.token) using the [Alcor API](https://docs.alcor.exchange/developers-api). The live price of Wax is taken from the [Coingekko](https://www.coingecko.com/en/coins/wax) using the [Coingekko API](https://www.coingecko.com/en/api#explore-api)
     <img src="assets/images/readme/liveprices.png" alt="mining power" width="500" height="75"/>
@@ -87,12 +109,12 @@ The custom tooL icons for the mining power & elements were made by my graphics d
 
 
 * **Tool selection**
-    * A feature to allow users to easily change from the mining power calculator tool, to the elements tool.
+    * A feature to allow users to easily change from the mining power calculator tool, to the elements tool
     <img src="assets/images/readme/toolselector.png" alt="mining power" width="500" height="125"/>
 
 
 * **Mining tool**
-    * A feature to allow users to calculate their **AETHER, WAX, USD** earnings which follows an algorithm based on the live prices.
+    * A feature to allow users to calculate their **AETHER, WAX, USD** earnings which follows an algorithm based on the live prices
     <img src="assets/images/readme/miningpower_result.png" alt="mining power" width="500" height="175"/>
 
 
@@ -102,7 +124,7 @@ The custom tooL icons for the mining power & elements were made by my graphics d
     [RPLANET](https://rplanet.io/all_elements) and see the cost of that element from **AETHER** > **WAX** > **USD**
 <img src="assets/images/readme/elements.png" alt="mining power" width="500" height="175"/>
 
-#### Features Left to Implement
+## Features Left to Implement
 * **WAX Sign-in**
     * Allows users to login directly to their WAX account to pull their data automatically
 * **Tool Automation**
@@ -131,28 +153,56 @@ The custom tooL icons for the mining power & elements were made by my graphics d
 
 # Testing
 
+### Feature testing
+
+| Test | Title | Process | Result | 
+| ----------- | ----------- | ----------- | ------- | 
+| T1 | Splash screen | To test the splash screen was working correctly I ensured firstly that it responded well to all devices (mobile/tablet/desktop). I then tested the exit button to make sure it takes the user to the homepage | Working as expected |
+| T2 | Live API data | To test the live API data was working correctly i monitored the change in the live price feed. This is expected to update every 10 seconds |  <img src="assets/images/readme/testing/Testresult1.png" alt="mining power" width="100" height="75"/>  |
+| T3 | Tool selection buttons |  | <img src="assets/images/readme/testing/Testresult2.png" alt="mining power" width="100" height="45"/> |
+| T4 | Live API data (Error/offline) |  |  |
+| T5 | Tool 1 - Mining power (Input) |  |  |
+| T5.A | Tool 1 - Mining power (Result) |  |  |
+| T6 | Tool 2 - Elements (Input) |  |  |
+| T6.A | Tool 2 - Elements (Result) |  |  |
+| T7 | Responsive design |  |  |
+
+* T1 - Splash screen
+
+* T2 - Splash screen
+
+* T3 - Splash screen
+
+* T4 - Splash screen
+
+* T5 - Splash screen
+
+* T6 - Splash screen
+
 #### Validator Tests
 
 * **HTML**
     * No errors were returned when passing the **index.html** file through the official [W3C validator](https://validator.w3.org)
+
+        #### **index.html**
+
+        <img src="assets/images/readme/HTML_results.png" alt="validator result" width="500" height="200"/>
 * **CSS**
     * All of the following files were passed through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator)
 
-        * **main.css**
+        #### **main.css**
 
-        <img src="assets/images/readme/MAIN_results.png" alt="mining power" width="500" height="200"/>
+        <img src="assets/images/readme/MAIN_results.png" alt="validator result" width="500" height="200"/>
 
-        <br><br>
 
-        * **splash.css**
+        #### **splash.css**
 
-        <img src="assets/images/readme/SPLASH_result.png" alt="mining power" width="500" height="200"/>
+        <img src="assets/images/readme/SPLASH_result.png" alt="validator result" width="500" height="200"/>
 
-        <br><br>
         
-        * **typewriter.css**
+        #### **typewriter.css**
 
-        <img src="assets/images/readme/TYPEWRITER_results.png" alt="mining power" width="500" height="200"/>
+        <img src="assets/images/readme/TYPEWRITER_results.png" alt="validator result" width="500" height="200"/>
 
 
 # Depolyment
@@ -178,11 +228,28 @@ The custom tooL icons for the mining power & elements were made by my graphics d
 
 * A clone of the project will be created locally on your machine.
 
-#### This site was deployed to GitHub pages. The steps to deploy are as follows:
+### Github pages
+
+This site was deployed to GitHub pages. The steps to deploy are as follows:
 * In the GitHub repository, navigate to the Settings tab
 * From the source section drop-down menu, select the Master Branch
 * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-* The live link can be found [here](https://rcalculator.net/)
+* The live link can be found [here](https://somadevv.github.io/Rcalculator)
+
+# Credits
+
+* Currency images taken from [Google](https://google.co.uk)
+* API Data was taken from [Alcor API](https://docs.alcor.exchange/developers-api) & [Coingekko](https://www.coingecko.com/en/api)
+
+* The flex box CSS properties were used from [Stack overflow](https://stackoverflow.com/questions/44623821/how-to-use-flexbox)
+
+#### Acknowledgements
+* My mentor Spencer Baribell for his guidance throughout the project
+
+* Mr Bim (Slack community member) helped write some of the algorithm logic in this project
+
+* GNARLY (Close friend) helped with tool icon designs used in this project
+
 
 
         

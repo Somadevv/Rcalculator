@@ -1,302 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/splash.css">
-        <link rel="stylesheet" href="assets/css/typeWriter.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="icon" href="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX17438123.jpg">
-        <title>RCalculator</title>
-      </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/splash.css">
+  <link rel="stylesheet" href="assets/css/typeWriter.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" href="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX17438123.jpg">
+  <title>RCalculator</title>
+</head>
 
 <body>
-   <div class="splash-screen">
-         <div class="splash-title">
-           <h5 class="splash-text">Rcalculator is a simple and easy way of calculating your mining power earnings!</h5>
-         </div>
-        <div class="box">
-          <img class="price-image" src="assets/images/aether.png" alt="Card image cap">
-          <h6 class="splash-text">AETHER</h6>
-        </div>
-        <div class="box">
-          <img class="price-image" src="assets/images/wax.png" alt="Card image cap">
-          <h6 class="splash-text">WAX</h6>
-        </div>
-        <div class="box">
-          <img class="price-image" src="assets/images/usdt.png" alt="Card image cap">
-          <h6 class="splash-text">USDT</h6>
-        </div>
-        <button id="splash">Got it!</button>
-      </div>
+  <div class="splash-screen">
+    <div class="splash-title">
+      <h5 class="splash-text">Rcalculator is a simp!</h5>
+    </div>
+    <div class="box">
+      <img class="price-image" src="assets/images/aether.png" alt="Card image cap">
+      <h6 class="splash-text">AETHER</h6>
+    </div>
+    <div class="box">
+      <img class="price-image" src="assets/images/wax.png" alt="Card image cap">
+      <h6 class="splash-text">WAX</h6>
+    </div>
+    <div class="box">
+      <img class="price-image" src="assets/images/usdt.png" alt="Card image cap">
+      <h6 class="splash-text">USDT</h6>
+    </div>
+    <button id="splash">Got it!</button>
+  </div>
 
-   <main class="hidden" id="main">
+  <main class="hidden" id="main">
     <div class="prices-container">
-        <div class="grid-flex">
+      <div class="grid-flex">
+        <div class="col">
+          <div class="card" style="width: 100%">
+            <div class="img-square-wrapper">
+              <img class="price-image" src="assets/images/aether.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <div class="inbetween-container">
+                <p class="wax card-text white" id="aether"></p>
+              </div>
+            </div>
+            <div class="lds-ripple">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <h1 class="Rcalculator">Rcalculator</h1>
+        <div class="column">
+          <div class="grid-flex">
             <div class="col">
-                <div class="card" style="width: 100%">
-                    <div class="img-square-wrapper">
-                        <img class="price-image" src="assets/images/aether.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <div class="inbetween-container">
-                            <p class="wax card-text white" id="aether"></p>
-                        </div>
-                    </div>
-                    <div class="lds-ripple">
-                        <div></div>
-                        <div></div>
-                    </div>
+              <div class="card" style="width: 100%">
+                <div class="img-square-wrapper">
+                  <img class="price-image" src="assets/images/wax.png" alt="Card image cap">
                 </div>
-            </div>
-            <div class="column">
-                <div class="grid-flex">
-                    <div class="col">
-                        <div class="card" style="width: 100%">
-                            <div class="img-square-wrapper">
-                                <img class="price-image" src="assets/images/wax.png" alt="Card image cap">
-                            </div>
 
-                            <div class="card-body">
-                                <div class="inbetween-container">
-                                    <p class="wax card-text white" id="wax"></p>
-                                </div>
-                            </div>
-                            <div class="lds-ripple-two">
-                                <div></div>
-                                <div></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="card-body">
+                  <div class="inbetween-container">
+                    <p class="wax card-text white" id="wax"></p>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="tool-container">
-            <div class="socials-container">
-                <div class="tool-container">
+                <div class="lds-ripple-two">
+                  <div></div>
+                  <div></div>
                 </div>
-                <br>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="tool-container">
+        <div class="socials-container">
+          <div class="tool-container">
+          </div>
+          <br>
+        </div>
+      </div>
     </div>
     <div class="toggle-center">
-        <div class="toggle-icon-container">
-            <img id="pickaxe" src="assets/images/mining.png" alt="">
-            <img id="crystal" src="assets/images/minerals.png" alt="">
-        </div>
+      <div class="toggle-icon-container">
+        <img id="pickaxe" src="assets/images/mining.png" alt="">
+        <img id="crystal" src="assets/images/minerals.png" alt="">
+      </div>
     </div>
     <div id="calculate-area" class="">
-        <div class="type-writer-container ">
-          <br>
-          <hr>
-          <p id="typingText" class="typingText typingFont text-white">Input your <span class="activeName">Mining
-              power</span></p>
+      <div class="type-writer-container ">
+        <br>
+        <hr>
+        <p id="typingText" class="typingText typingFont text-white">Input your <span class="activeName">Mining
+            power</span></p>
+      </div>
+      <div id="data">
+        <div class="form__group form__dave">
+          <input type="text" autocomplete="off" class="userInput form__control form__field input-lg" disabled
+            id="userInput" placeholder="Mining power">
+          <button type="button" class="btn btn-dark" disabled id="calculate-btn">Go</button>
         </div>
-        <div id="data">
-          <div class="form__group form__dave">
-            <input type="text" autocomplete="off" class="userInput form__control form__field input-lg" disabled
-              id="userInput" placeholder="Mining power">
-            <button type="button" class="btn btn-dark" disabled id="calculate-btn">Go</button>
-          </div>
-        </div>
-        <div class="results-container container">
-          <div class="row">
-            <div class="col-md-4 col-sm-4">
-              <div class="result-card" style="width: 100%">
-                <div class="wrapper">
-                  <img class="result-image" src="assets/images/aether.png" alt="Card image cap">
-                  <div class="card-body">
-                    <div class="currency-container">
-                      <div class="currency-icon">
-                      </div>
-                      <span class="toggled white">AETHER</span>
-                      <div class="currency-icon"></div>
+      </div>
+      <div class="results-container container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="result-card" style="width: 100%">
+              <div class="wrapper">
+                <img class="result-image" src="assets/images/aether.png" alt="Card image cap">
+                <div class="card-body">
+                  <div class="currency-container">
+                    <div class="currency-icon">
                     </div>
-                    <div id="aether-0"></div>
-                    <span class="hidden">Weekly</span>
-                    <div id="aether-1"></div>
-                    <span class="hidden">Monthly</span>
-                    <div id="aether-2"></div>
-                    <p class="card-text"></p>
+                    <span class="toggled white">AETHER</span>
+                    <div class="currency-icon"></div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="result-card" style="width: 100%">
-                  <div class="wrapper">
-                    <img class="result-image" src="assets/images/wax.png" alt="Card image cap">
-                    <div class="card-body">
-                      <div class="currency-container">
-                        <div class="currency-icon">
-      
-                        </div>
-                        <span class="toggled white">WAX</span>
-                        <div class="currency-icon"></div>
-                      </div>
-                      <div id="wax-0"></div>
-                      <span class="hidden">Weekly</span>
-                      <div id="wax-1"></div>
-                      <span class="hidden">Monthly</span>
-                      <div id="wax-2"></div>
-                      <p class="card-text"></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-4">
-                <div class="result-card" style="width: 100%">
-                  <div class="wrapper">
-                    <img class="result-image" src="assets/images/usdt.png" alt="Card image cap">
-                  <div class="card-body">
-                    <div class="currency-container">
-                      <div class="currency-icon">
-                      </div>
-                      <span class="toggled white" id="currency-title">USD</span>
-                      <div class="currency-icon"></div>
-                    </div>
-                    <div id="usdt-0"></div>
-                    <span class="hidden white">Weekly</span>
-                    <div id="usdt-1"></div>
-                    <span class="hidden">Monthly</span>
-                    <div id="usdt-2"></div>
-                    <p class="card-text"></p>
-                  </div>
+                  <div id="aether-0"></div>
+                  <span class="hidden">Weekly</span>
+                  <div id="aether-1"></div>
+                  <span class="hidden">Monthly</span>
+                  <div id="aether-2"></div>
+                  <p class="card-text"></p>
                 </div>
               </div>
             </div>
           </div>
-          </div>
-        </div>
-        <div id="search-area" class="hidden2">
-            <div id="element-searchbar" class="type-writer-container data"><br><hr>
-              <p class="typingText typingFont text-white">Browse through <span class="activeName">elements</span></p>
-              <div class="browse-input">
-                <input type="text" class="userInput form__control form__field input-lg" id="txt-search"
-                  name="name" placeholder="Search">
-              </div>
-            </div>
-            <h3 class="newest-elements" id="element-recent">Recently Discovered</h3>
-            <hr>
-            <br>
-            <div id="filter-records">
-              <div class="elem-flex">
-                <!-- end of one card -->
-                <div class="well">
-                  <div class="element-title inline-block">
-                    <h5>Broom</h5>
-                  </div>
-                  <div class="">
-                    <img class="element-image" src="assets/images/elements/broom.png" alt="" />
-                  </div>
-                  <div class="">
-                    <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
-                   <p class="inline-block">4,930,000</p><br>
-                  </div>
-                </div>
-                <div class="well">
-                  <div class="element-title">
-                    <h5>Block Chain</h5>
-                  </div>
-                  <div class="">
-                    <img class="element-image" src="assets/images/elements/blockchain.png" alt="" />
-                  </div>
-                  <div class="">
-                    <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
-                    <p class="inline-block">3,310,000</p><br>
-                  </div>
-                </div>
-                <div class="well">
-                  <div class="element-title inline-block">
-                    <h5>Block</h5>
-                  </div>
-                  <div class="">
-                    <img class="element-image" src="assets/images/elements/block.png" alt="" />
-                  </div>
-                  <div class="">
-                    <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
-                    <p class="inline-block">760,000</p><br>
-                  </div>
-                </div>
-                <div class="well">
-                  <div class="element-title inline-block">
-                    <h5>Money</h5>
-                  </div>
-                  <div class="">
-                    <img class="element-image inline-block" src="assets/images/elements/money.png" alt="" />
-                  </div>
-                  <div class="">
-                    <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
-                    <p class="inline-block">43,690,000</p><br>
-                  </div>
-                </div>
-                <div class="well">
-                  <div class="element-title inline-block">
-                    <h5>Music</h5>
-                  </div>
-                  <div class="">
-                    <img class="element-image inline-block" src="assets/images/elements/music.png" alt="" />
-                  <div class="">
-                    <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
-                    <p class="inline-block">12,760,000</p><br>
-                  </div>
-                </div>
-                </div>
-                <div class="well">
-                  <div class="element-title inline-block">
-                    <h5>Reed Pipe</h5>
-                  </div>
-                  <div class="">
-                    <img class="element-image" src="assets/images/elements/reed_pipe.png" alt="" />
-                  </div>
-                  <div class="">
-                    <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
-                    <p class="inline-block">5,560,000</p><br>
-                  </div>
-                </div>
-                <div class="well">
-                  <div class="element-title inline-block">
-                    <h5>Pipe</h5>
-                  </div>
-                  <div class="">
-                    <img class="element-image" src="assets/images/elements/pipe.png" alt="" />
-                  </div>
-                  <div class="">
-                    <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
-                    <p class="inline-block">5,290,000</p><br>
-                  </div>
-                </div>
-                <div class="well">
-                  <div class="element-title inline-block">
-                    <h5>Smoke</h5>
-                  </div>
-                  <div class="">
-                    <img class="element-image inline-block" src="assets/images/elements/smoke.png" alt="Card image"/>
-                  </div>
-                  <div class="">
-                    <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
-                    <p class="inline-block">340,000</p><br>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-    </main>
+          <div class="col-md-4 col-sm-4">
+            <div class="result-card" style="width: 100%">
+              <div class="wrapper">
+                <img class="result-image" src="assets/images/wax.png" alt="Card image cap">
+                <div class="card-body">
+                  <div class="currency-container">
+                    <div class="currency-icon">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="assets/scripts/app.js"></script>
-    <script src="assets/scripts/apiData.js"></script>
-    <script src="assets/scripts/search.js"></script>
-    <script src="assets/scripts/splash.js"></script>
-    <script>
-      fetchPrice(aetherId, `https://wax.alcor.exchange/api/markets/29`),
-    fetchPrice(waxId, `https://api.coingecko.com/api/v3/coins/wax`);
-    </script>
-        </body>
-    </html>
+                    </div>
+                    <span class="toggled white">WAX</span>
+                    <div class="currency-icon"></div>
+                  </div>
+                  <div id="wax-0"></div>
+                  <span class="hidden">Weekly</span>
+                  <div id="wax-1"></div>
+                  <span class="hidden">Monthly</span>
+                  <div id="wax-2"></div>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="result-card" style="width: 100%">
+              <div class="wrapper">
+                <img class="result-image" src="assets/images/usdt.png" alt="Card image cap">
+                <div class="card-body">
+                  <div class="currency-container">
+                    <div class="currency-icon">
+                    </div>
+                    <span class="toggled white" id="currency-title">USD</span>
+                    <div class="currency-icon"></div>
+                  </div>
+                  <div id="usdt-0"></div>
+                  <span class="hidden white">Weekly</span>
+                  <div id="usdt-1"></div>
+                  <span class="hidden">Monthly</span>
+                  <div id="usdt-2"></div>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="search-area" class="hidden2">
+      <div id="element-searchbar" class="type-writer-container data"><br>
+        <hr>
+        <p class="typingText typingFont text-white">Browse through <span class="activeName">elements</span></p>
+        <div class="browse-input">
+          <input type="text" class="userInput form__control form__field input-lg" id="txt-search" name="name"
+            placeholder="Search">
+        </div>
+      </div>
+      <h3 class="newest-elements" id="element-recent">Recently Discovered</h3>
+      <hr>
+      <br>
+      <div id="filter-records">
+        <div class="elem-flex">
+          <!-- end of one card -->
+          <div class="well">
+            <div class="element-title inline-block">
+              <h5>Broom</h5>
+            </div>
+            <div class="">
+              <img class="element-image" src="assets/images/elements/broom.png" alt="" />
+            </div>
+            <div class="">
+              <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
+              <p class="inline-block">4,930,000</p><br>
+            </div>
+          </div>
+          <div class="well">
+            <div class="element-title">
+              <h5>Block Chain</h5>
+            </div>
+            <div class="">
+              <img class="element-image" src="assets/images/elements/blockchain.png" alt="" />
+            </div>
+            <div class="">
+              <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
+              <p class="inline-block">3,310,000</p><br>
+            </div>
+          </div>
+          <div class="well">
+            <div class="element-title inline-block">
+              <h5>Block</h5>
+            </div>
+            <div class="">
+              <img class="element-image" src="assets/images/elements/block.png" alt="" />
+            </div>
+            <div class="">
+              <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
+              <p class="inline-block">760,000</p><br>
+            </div>
+          </div>
+          <div class="well">
+            <div class="element-title inline-block">
+              <h5>Money</h5>
+            </div>
+            <div class="">
+              <img class="element-image inline-block" src="assets/images/elements/money.png" alt="" />
+            </div>
+            <div class="">
+              <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
+              <p class="inline-block">43,690,000</p><br>
+            </div>
+          </div>
+          <div class="well">
+            <div class="element-title inline-block">
+              <h5>Music</h5>
+            </div>
+            <div class="">
+              <img class="element-image inline-block" src="assets/images/elements/music.png" alt="" />
+              <div class="">
+                <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
+                <p class="inline-block">12,760,000</p><br>
+              </div>
+            </div>
+          </div>
+          <div class="well">
+            <div class="element-title inline-block">
+              <h5>Reed Pipe</h5>
+            </div>
+            <div class="">
+              <img class="element-image" src="assets/images/elements/reed_pipe.png" alt="" />
+            </div>
+            <div class="">
+              <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
+              <p class="inline-block">5,560,000</p><br>
+            </div>
+          </div>
+          <div class="well">
+            <div class="element-title inline-block">
+              <h5>Pipe</h5>
+            </div>
+            <div class="">
+              <img class="element-image" src="assets/images/elements/pipe.png" alt="" />
+            </div>
+            <div class="">
+              <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
+              <p class="inline-block">5,290,000</p><br>
+            </div>
+          </div>
+          <div class="well">
+            <div class="element-title inline-block">
+              <h5>Smoke</h5>
+            </div>
+            <div class="">
+              <img class="element-image inline-block" src="assets/images/elements/smoke.png" alt="Card image" />
+            </div>
+            <div class="">
+              <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
+              <p class="inline-block">340,000</p><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="assets/scripts/app.js"></script>
+  <script src="assets/scripts/apiData.js"></script>
+  <script src="assets/scripts/search.js"></script>
+  <script src="assets/scripts/splash.js"></script>
+  <script>
+    fetchPrice(aetherId, `https://wax.alcor.exchange/api/markets/29`),
+      fetchPrice(waxId, `https://api.coingecko.com/api/v3/coins/wax`);
+  </script>
+</body>
+
+</html>

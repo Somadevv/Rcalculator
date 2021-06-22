@@ -35,7 +35,6 @@ position: absolute;
   width: 100vw;
 }
 .circle {
-
   line-height: 100px;
   width: 100px;
   height: 100px;
@@ -49,6 +48,10 @@ position: absolute;
     #252736 0%,
     #333336
   );
+}
+.Rcalculator {
+  color: wheat;
+  font-size: 1.5rem;
 }
 .currency-wrapper {
   width: 100%;
@@ -67,7 +70,6 @@ position: absolute;
     #1d1e26
   );
   width: 100vw;
-  height: 175px;
   /* background-color: rgba(39, 39, 39, 0.726); */
 }
 
@@ -155,18 +157,6 @@ position: absolute;
     width: 60%;
   }
   
-  /* #aether {
-      position: absolute;
-      top: 68px;
-      left: 28%;
-      width: 100px;
-  }
-  #wax {
-      position: absolute;
-      top: 68px;
-      left: 63.5%;
-      width: 100px;
-  } */
   #aether-0,
   #aether-1,
   #aether-2,
@@ -269,7 +259,6 @@ position: absolute;
     letter-spacing: 2px;
     width: 200px;
     border: 1px solid #ff1e7c;
-    /* border-bottom: 1.75px solid #ff1e7c; */
     outline: 0;
     font-size: 1rem;
     color: rgb(255, 255, 255);
@@ -710,7 +699,7 @@ position: absolute;
         font-size: .75rem;
       }
     .prices-container {
-      height: 190px;
+      height: 160px;
       /* background-color: rgba(39, 39, 39, 0.726); */
     }
   
@@ -731,10 +720,6 @@ position: absolute;
       width: 100px;
       height: 100px;
     }
-    #pickaxe {
-      margin-left: 50px;
-    }
-  
   
     .tool-title {
       bottom: 45px;

@@ -26,7 +26,6 @@ let aetherId = "29";
 let waxId = "28";
 let miningPower;
 let prices = {};
-let tempAetherPrice = 0.00091517;
 let responseData = {};
 
 
@@ -77,10 +76,6 @@ const calculateFigures = (dest) => {
     };
     (resultsObject.wax = {
       // Price of WAX * Daily Aether
-    //   daily: resultsObject.aether.daily * tempAetherPrice,
-    //   weekly: resultsObject.aether.weekly * tempAetherPrice,
-    //  monthly: resultsObject.aether.monthly * tempAetherPrice,
-      
       daily: resultsObject.aether.daily * prices.aether,
       weekly: resultsObject.aether.weekly * prices.aether,
       monthly: resultsObject.aether.monthly * prices.aether,
@@ -94,10 +89,11 @@ const calculateFigures = (dest) => {
   
     return resultsObject;
   };
-  
+  // Write to DOM 
   function writeToDom(dest, data) {
     dest.innerText = data;
   }
+  // Format result numbers
   function formatNumbers(num, decimals) {
     if (num % 1 === 0) {
       return num;
@@ -115,6 +111,7 @@ const calculateFigures = (dest) => {
         return  num + (pos && !(pos % 3) ? "," : "") + acc;
     }, "") + (p[1] ? "." + p[1] : "");
   }
+  // Write to DOM
   function writeObjectToDom(dest, data) {
     const firstId = `${dest}-0`;
     const secondId = `${dest}-1`;
@@ -141,6 +138,7 @@ const calculateFigures = (dest) => {
     return result;
   }
   
+  // Fetch prices
   function fetchPrice(currencyId, url) {
     const body = {
       method: "GET",
@@ -159,20 +157,15 @@ const calculateFigures = (dest) => {
         $(userInput).attr("placeholder", "Ready!");
         $(userInput).removeAttr("disabled");
         $(loader).addClass('hidden');
-        // $(elementContainer).addClass('hidden');
-  
-  
       });
       
   }
+  // MAIN API FETCH CALL
   setInterval(function () {
     fetchPrice(aetherId, `https://wax.alcor.exchange/api/markets/29`),
       fetchPrice(waxId, `https://api.coingecko.com/api/v3/coins/wax`);
   }, 10000);
   
-  
-  // REMOVE THIS, IT'S THE TEMPORARY PRICE
-  // domAETHER.innerText = tempAetherPrice;
   
   let usdId = "USD";
   let gbpId = "GBP";
@@ -279,24 +272,8 @@ pickaxeIcon.addEventListener('click', () => {
     $(pickaxeIcon).css('opacity', 1)
 })
 
-// DROPDOWN BOX 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+
+
+
   
