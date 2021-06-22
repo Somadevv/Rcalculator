@@ -1,6 +1,6 @@
 # Rcalculator
 
-<img src="assets/images/rlogo.png" alt="aether" width="500" height="500"/>
+<img src="assets/images/rlogo.png" alt="aether" width="1000" height="500"/>
 
 Rcalculator is a tool created to help users easily calculate their mining power based on the NFT crypto project [RPLANET](https://rplanet.io), they can also check to the current value of all the elements 
 
