@@ -166,7 +166,7 @@ The custom tool icons for the mining power & elements were made by my graphics d
 
 # Errors
 | Test | Error | Analysis | 
-| ----------- | ----------- | ----------- | ------- | 
+| ----------- | ----------- | ----------- | 
 | E1 | Broken exit button | Upon pressing the 'Got it!' button the Splash screen wouldn't dissapear and would stay in view, to fix this issue some Javascript logic was added, this was to add a 'hidden' class to the parent element that will add a CSS property ('Display: none') when the user clicks on the exit button, I did this by adding an event listener on the exit button |
 | E2 | Server flooding | The function that handles the API calls had a interval of 5 seconds, this meant every user that visits Rcalculator makes a call to the server endpoint every 5 seconds, this in turn flooded the endpoint and blocked our services. To fix this problem the interval was changed to 30 seconds |
 | E3 | DOM overlapping | When adding the elemental tool to the project there was an issue with displaying & hiding the main content areas. When toggling between each tool the content would overlap one another, to fix this I seperated each of the tools into their own containers and added event listeners onto the buttons to hide the opposite tool to the DOM | 
@@ -232,6 +232,7 @@ This site was deployed to GitHub pages. The steps to deploy are as follows:
 
 # Credits
 
+* Search filter functionality taken from [Stack overflow](https://stackoverflow.com/questions/47224846/search-box-for-json-data)
 * Currency images taken from [Google](https://google.co.uk)
 * API Data was taken from [Alcor API](https://docs.alcor.exchange/developers-api) & [Coingekko](https://www.coingecko.com/en/api)
 
