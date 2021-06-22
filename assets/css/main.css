@@ -34,6 +34,10 @@ position: absolute;
 .type-writer-container {
   width: 100vw;
 }
+#offline {
+  color: wheat;
+
+}
 .circle {
   line-height: 100px;
   width: 100px;
