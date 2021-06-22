@@ -132,8 +132,11 @@ The custom tool icons for the mining power & elements were made by my graphics d
 
 # Technologies
 
-* [HTML](https://en.wikipedia.org/wiki/HTML)
-    * This project uses HTML as the main language used to complete the structure of the Website.
+* [Alcor API](https://docs.alcor.exchange/developers-api)
+    * This project uses the Alcor API to gather the live price of the **AETHER** currency used in this project.
+
+* [Coingekko API](https://www.coingecko.com/en/api)
+    * This project uses the Alcor API to gather the live price of the **AETHER** currency used in this project.
 
 * [CSS](https://en.wikipedia.org/wiki/CSS)
     * This project uses custom written CSS to style the Website.
