@@ -165,13 +165,13 @@ The custom tool icons for the mining power & elements were made by my graphics d
 | T7 | Responsive design | To test the websites stability and ensuring it covers responsive design, the respective browser developer tools were used on the following browsers: Firefox, Chrome, IE & Safari and enabled the device viewer to allow change in the viewport. All browsers work well with all native devices (mobile/tablet/desktop) |
 
 # Errors
-| Test | Error | Analysis | 
+| Error | Title | Analysis | 
 | ----------- | ----------- | ----------- | 
 | E1 | Broken exit button | Upon pressing the 'Got it!' button the Splash screen wouldn't dissapear and would stay in view, to fix this issue some Javascript logic was added, this was to add a 'hidden' class to the parent element that will add a CSS property ('Display: none') when the user clicks on the exit button, I did this by adding an event listener on the exit button |
 | E2 | Server flooding | The function that handles the API calls had a interval of 5 seconds, this meant every user that visits Rcalculator makes a call to the server endpoint every 5 seconds, this in turn flooded the endpoint and blocked our services. To fix this problem the interval was changed to 30 seconds |
-| E3 | DOM overlapping | When adding the elemental tool to the project there was an issue with displaying & hiding the main content areas. When toggling between each tool the content would overlap one another, to fix this I seperated each of the tools into their own containers and added event listeners onto the buttons to hide the opposite tool to the DOM | 
+| E3 | DOM overlapping | When adding the elemental tool to the project there was an issue with displaying & hiding the main content areas. When toggling between each tool the content would overlap one another, to fix this issue I seperated each of the tools into their own containers and added event listeners onto the buttons to hide the opposite tool to the DOM | 
 | E4 | Search filter not working | The elemental tool's search filter wasn't working correctly. It would break when the user input field was deleted and didn't display anything to the DOM. To fix this issue I used an online source found on Stack overflow and re-wrote the functionality that controls the search filter
-
+|
 
 #### Validator Tests
 
