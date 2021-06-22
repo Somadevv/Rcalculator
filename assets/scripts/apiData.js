@@ -44,7 +44,7 @@ $(".userInput").keyup(function (event) {
 
 $("#calculate-btn").click(function () {
   searchArea.hidden;
-  splash.classList.add('hideSplash')
+  // splash.classList.add('hideSplash')
   elementIsClicked = true;
   event.preventDefault();
   document.getElementById("calculate-btn").click();
@@ -98,7 +98,7 @@ const calculateFigures = (dest) => {
     if (num % 1 === 0) {
       return num;
     } else {
-      return num.toFixed(decimals);
+      return num;
     }
   }
   function format(num, fix) {
@@ -271,8 +271,6 @@ pickaxeIcon.addEventListener('click', () => {
     $(elementIcon).css('opacity', .3)
     $(pickaxeIcon).css('opacity', 1)
 })
-
-
 
 
 

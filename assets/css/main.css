@@ -504,14 +504,15 @@ position: absolute;
   
   
   .elem-flex {
-    display: flex;
+    margin: auto;
+    width: 40%;
     flex-direction: column;
-    width: 100%;
+   
     justify-content: space-around;
   }
   
   .well {
-    margin: auto;
+    margin-left: 50%;
     height: auto;
     margin-bottom: 25px;
     text-align: center;
@@ -523,6 +524,7 @@ position: absolute;
     );
     color: white;
     box-shadow: 5px 5px 15px 5px #00000080;
+    
   }
   
   .placeholder-card {
@@ -539,7 +541,11 @@ position: absolute;
     margin: auto;
   }
   #filter-records {
-    min-height: 282px;
+    min-height: 10px;
+  
+  }
+  #recent-elements {
+    min-height: 50px;
   
   }
   .searched-price-image {

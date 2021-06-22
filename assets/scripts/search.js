@@ -537,18 +537,27 @@ $(document).ready(function () {
     },
   ];
 
-  output = '<div class="elem-flex">';
-  
- $.each(data, function(key, val){
-  let usdtResult = val.cost * prices.aether * prices.wax;
+  // output = '<div class="elem-flex">';
 
-  output += "<div class='values'>";
-  output += '<p class="value-name">' + val.name + '</p>'
-  output += `
+ $("#txt-search").keyup(function () {
+      var searchField = $(this).val();
+      if (searchField === "") {
+        $("#filter-records").html("");
+        return;
+      }
+
+      var regex = new RegExp(RegExp.escape($.trim(this.value).replace(/\s+/g, ' ')), 'i')
+      var output = '<div class="elem-flex">';
+
+      var count = 1;
+      $.each(data, function (key, val) {
+        if (val.name.search(regex) != -1) {
+          let usdtResult = val.cost * prices.aether * prices.wax;
+          // usdtResult = formatNumbers(usdtResult, 2);
+          output += `
           <div class="well">
-          '<p class="value-name">' + ${val.name} + '</p>'
-              <div class="element-title">
-              <h5 class="value-name">${val.name}</h5>
+              <div class="element-title"><h5>
+              ${val.name}</h5>
                   <img class="element-image" src="${val.image}" alt="${val.name}" />
               </div>
               <div class="">
@@ -558,14 +567,18 @@ $(document).ready(function () {
                   <img class="searched-price-image inline-block" src="assets/images/usdt.png" alt="Card image cap">
                   <p class="inline-block">${usdtResult}</p>
               </div>
-          </div>
           </div>`
         }
-      )
-      output += "</div> </div> </div> </div>";
- $('#content').html(output);
+      });
+      output += `<div class="placeholder-card"></div>
+                  <div class="placeholder-card" ></div>
+                  <div class="placeholder-card" ></div>`
+      output += "</div> </div> </div>";
+      $("#filter-records").html(output);
+    });
+  });
  
- /* SEEKER FUNCTION */
+//  SEEKER FUNCTION 
   if (!RegExp.escape) {
     RegExp.escape = function (s) {
       return s.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g, "\\$&")
@@ -582,55 +595,11 @@ $(document).ready(function () {
      }).show();
    });
  });
-  // prices.wax = formatNumbers(prices.usdt, 4);
-  // prices.aether = formatNumbers(prices.wax, 3);
-  // prices.usdt = formatNumbers(prices.aether, 5);
+
+
  
 
 
 
 
   
-  //   $("#txt-search").keyup(function () {
-  //     elementTitle.classList.add('hidden');
-  //     var searchField = $(this).val();
-  //     if (searchField === "") {
-  //       $("#filter-records").html("");
-  //       return;
-  //     }
-  //     prices.wax = formatNumbers(prices.wax, 2);
-  //     prices.aether = formatNumbers(prices.aether, 3);
-  //     var regex = new RegExp(searchField, "i");
-  //     var output = '<div class="elem-flex">';
-  //     var count = 1;
-  //     $.each(data, function (key, val) {
-  //       if (val.name.search(regex) != -1) {
-  //         let usdtResult = val.cost * prices.aether * prices.wax;
-  //         usdtResult = formatNumbers(usdtResult, 2);
-  //         output += `
-  //         <div class="well">
-  //             <div class="element-title"><h5>
-  //             ${val.name}</h5>
-  //                 <img class="element-image" src="${val.image}" alt="${val.name}" />
-  //             </div>
-  //             <div class="">
-  //                 <img class="searched-price-image" src="assets/images/aether.png" alt="Card image cap"> <p class=" inline-block">${val.cost}</p></br>
-  //                 <img class="searched-price-image" src="assets/images/wax.png" alt="Card image cap">
-  //                 <p class="inline-block">${val.cost * prices.aether}</p>
-  //                 <img class="searched-price-image inline-block" src="assets/images/usdt.png" alt="Card image cap">
-  //                 <p class="inline-block">${usdtResult}</p>
-  //             </div>
-  //         </div>`
-  //       }
-  //     });
-  //     output += `<div class="placeholder-card"></div>
-  //                 <div class="placeholder-card" ></div>
-  //                 <div class="placeholder-card" ></div>`
-  
-  //     output += "</div> </div> </div>";
-  //     $("#filter-records").html(output);
-  //   });
-  // });
-
-
-})

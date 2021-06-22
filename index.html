@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <div class="splash-screen">
+  <!-- <div class="splash-screen">
     <div class="splash-title">
       <h5 class="splash-text">Rcalculator is a simp!</h5>
     </div>
@@ -33,9 +33,9 @@
       <h6 class="splash-text">USDT</h6>
     </div>
     <button id="splash">Got it!</button>
-  </div>
+  </div> -->
 
-  <main class="hidden" id="main">
+  <main id="main">
     <div class="prices-container">
       <div class="grid-flex">
         <div class="col">
@@ -179,20 +179,20 @@
         <hr>
         <p class="typingText typingFont text-white">Browse through <span class="activeName">elements</span></p>
         <div class="browse-input">
-          <input type="text" class="userInput form__control form__field input-lg" id="seeker" name="name"
+          <input type="text" class="userInput form__control form__field input-lg" id="txt-search" name="name"
             placeholder="Search">
         </div>
-      <div class="search-bar">
-        <!-- <input type="text" id="seeker"> -->
       </div>
-      <div id="content"></div>
-     
-      </div>
-      <h3 class="newest-elements" id="element-recent">Recently Discovered</h3>
-      <hr>
+
+      <div id="filter-records"></div>
       <br>
-      <div id="filter-records">
+      <h3 class="newest-elements">Recently Discovered!</h3>
+      <hr>
+
+      <div id="recent-elements">
+  
         <div class="elem-flex">
+          
           <!-- end of one card -->
           <div class="well">
             <div class="element-title inline-block">
@@ -290,6 +290,7 @@
               <p class="inline-block">340,000</p><br>
             </div>
           </div>
+
         </div>
       </div>
     </div>
