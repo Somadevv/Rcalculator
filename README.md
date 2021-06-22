@@ -110,7 +110,7 @@ The custom tool icons for the mining power & elements were made by my graphics d
 
 * **Tool selection**
     * A feature to allow users to easily change from the mining power calculator tool, to the elements tool
-    <img src="assets/images/readme/toolselector.png" alt="mining power" width="350" height="100"/>
+    <img src="assets/images/readme/toolselector.png" alt="mining power" width="200" height="100"/>
 
 
 * **Mining tool**
