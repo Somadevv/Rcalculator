@@ -77,6 +77,25 @@ Media: <br>
 <br>
 <img src="assets/images/readme/userstory_result3.png" alt="user story result" width="500" height="300"/>
 
+3. User story:
+<pre>As a user I want to be able to navigate around the website with ease so that I can view content/manipulate content</pre>
+
+Implementation:
+
+The website is a single page design, this means the user will not be redirected to multiple pages within the website therefore increasing user usability and response time
+
+4. User story:
+<pre>As a user I want to be able to see my mining power earnings in detail</pre>
+
+Implementation:
+
+The mining power tool was created to give users a easy and fast way to see how much their mining power is earning them per day/week/month. With this comes a converted version of the **AETHER** returned, showing the user how much it's worth in **WAX** & **USDT**
+
+Media: <br>
+<img src="assets/images/readme/userstory_result4.png" alt="user story result" width="500" height="300"/>
+
+
+
 
 ## Wireframes
 
