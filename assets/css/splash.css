@@ -1,39 +1,79 @@
 * {
     font-family: "Righteous", "Roboto";
     color: wheat;
+    
 }
 .price-image {
+    height: 50px;
     margin-bottom: 10px;
 }
+.currencies-title-container {
+    text-align: center;
+}
+.currencies-title {
 
-.splash-screen {
-  
+}
+.splash-main {
     width: 100vw;
     height: 94vh;
 }
-.splash-title {
-    background-image: radial-gradient(
+.splash-intro-container {
+    height: 70px;
+}
+.splash-flex {
+    flex-flow: row wrap;
+    display: flex;
+}
+.splash-body {
+    margin: 0 auto;
+    height: 80vh;
+    width: 100vw;
+        background-image: radial-gradient(
     circle at 0% 0%,
     #1b1b1b,
     #242529 51%,
     #1d1e26
   );
-    height: 160px;
-    font-size: 20px;
-
-}
-.splash-body {
-    display: flex;
-}
-.splash-text {
-    padding-top: 3rem;
-    font-size: 1.5rem;
-
 }
 .box {
-    background-color: red;
-    margin: 0 auto;
+    margin-top: 25px;
+    height: 125px;
+    width: 100%; 
+    text-align: center;
+
+}
+.box2 {
+    justify-content: space-around;
     width: 50%;
-    height: 100px;
-    margin-bottom: 10px;
+    text-align: center;
+}
+.splash-title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.splash-description {
+    text-align: center;
+    font-size: 1rem;
+}
+.splash-text {
+    padding-top: .75rem;
+    font-size: .75rem;
+    line-height: 1.4;
+
+}
+.exit-button-container {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    
+} 
+.exit-button-container > button {
+    border: 0;
+    position: relative;
+    left: 5px;
+    top: 12.5px;
+    height: 35px;
+    color: white;
+    background-color: #861142;
+    border: 0;
 }

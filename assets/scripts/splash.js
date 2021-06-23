@@ -1,6 +1,7 @@
-let splash = document.querySelector('.splash-screen');
+let splashView = document.querySelector('.splash-main');
+let splash = document.getElementById('splash');
 let main = document.getElementById('main');
 splash.addEventListener('click', () => {
-    splash.classList.add('hideSplash')
+    splashView.classList.add('hideSplash')
     main.classList.remove('hideSplash')
 })

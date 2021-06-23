@@ -17,26 +17,49 @@
 
 <body>
   <!-- INTRODUCTION SPLASH SCREEN -->
-  <div class="splash-screen">
-    <div class="splash-title">
-      <h5 class="splash-text">Rcalculator is a simp!</h5>
+  <div class="splash-main">
+    <div class="splash-intro-container">
+      <h2 class="splash-title">Welcome to Rcalculator!</h2>
+      <h4 class="splash-description">A tool created for <a href="https://rplanet.io/" target="_blank">RPLANET</a></h4>
     </div>
+
+    <!-- SPLASH SCREEN BODY -->
     <div class="splash-body">
-    <div class="box">
+      <div class="currencies-title-container">
+        <p class="currencies-title">Currencies used in this project</p>
+      </div>
+      <div class="splash-flex">
+        <div class="box">
       <img class="price-image" src="assets/images/aether.png" alt="Card image cap">
-      <h6 class="splash-text">AETHER</h6>
+      <h6 class="splash-text">AETHER is a currency created by <a href="https://rplanet.io/" target="_blank">RPLANET</a></h6>
     </div>
     <div class="box">
       <img class="price-image" src="assets/images/wax.png" alt="Card image cap">
-      <h6 class="splash-text">WAX</h6>
+      <h6 class="splash-text">WAX is a purpose-built blockchain</h6>
     </div>
     <div class="box">
       <img class="price-image" src="assets/images/usdt.png" alt="Card image cap">
-      <h6 class="splash-text">USDT</h6>
+      <h6 class="splash-text">USDT is a crypto currency stable coin</h6>
     </div>
+    <div class="box2">
+      <img class="price-image" src="assets/images/mining.png" alt="Card image cap">
+      <h6 class="splash-text">MINING TOOL</h6>
+    </div>
+    <div class="box2">
+      <img class="price-image" src="assets/images/minerals.png" alt="Card image cap">
+      <h6 class="splash-text">ELEMENTAL TOOL</h6>
+    </div>
+  </div>
+</div>
+
+  <div class="exit-button-container">
+    <hr>
     <button id="splash">Got it!</button>
   </div>
 </div>
+</div>
+  </div>
+
 <!-- TOP BAR INCLUDES AETHER & WAX LIVE PRICE FEED -->
   <main id="main" class="hideSplash">
     <div class="prices-container">
@@ -201,7 +224,7 @@
               <h5>Broom</h5>
             </div>
             <div class="">
-              <img class="element-image" src="assets/images/elements/broom.png" alt="" />
+              <img class="element-image" src="assets/images/elements/broom.png" alt="element image"/>
             </div>
             <div class="">
               <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
@@ -213,7 +236,7 @@
               <h5>Block Chain</h5>
             </div>
             <div class="">
-              <img class="element-image" src="assets/images/elements/blockchain.png" alt="" />
+              <img class="element-image" src="assets/images/elements/blockchain.png" alt="element image" />
             </div>
             <div class="">
               <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
@@ -225,7 +248,7 @@
               <h5>Block</h5>
             </div>
             <div class="">
-              <img class="element-image" src="assets/images/elements/block.png" alt="" />
+              <img class="element-image" src="assets/images/elements/block.png" alt="element image" />
             </div>
             <div class="">
               <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
@@ -237,7 +260,7 @@
               <h5>Money</h5>
             </div>
             <div class="">
-              <img class="element-image inline-block" src="assets/images/elements/money.png" alt="" />
+              <img class="element-image inline-block" src="assets/images/elements/money.png" alt="element image" />
             </div>
             <div class="">
               <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
@@ -249,7 +272,7 @@
               <h5>Music</h5>
             </div>
             <div class="">
-              <img class="element-image inline-block" src="assets/images/elements/music.png" alt="" />
+              <img class="element-image inline-block" src="assets/images/elements/music.png" alt="element image" />
               <div class="">
                 <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
                 <p class="inline-block">12,760,000</p><br>
@@ -261,7 +284,7 @@
               <h5>Reed Pipe</h5>
             </div>
             <div class="">
-              <img class="element-image" src="assets/images/elements/reed_pipe.png" alt="" />
+              <img class="element-image" src="assets/images/elements/reed_pipe.png" alt="element image" />
             </div>
             <div class="">
               <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
@@ -273,7 +296,7 @@
               <h5>Pipe</h5>
             </div>
             <div class="">
-              <img class="element-image" src="assets/images/elements/pipe.png" alt="" />
+              <img class="element-image" src="assets/images/elements/pipe.png" alt="element image" />
             </div>
             <div class="">
               <img class="searched-price-image inline-block" src="assets/images/aether.png" alt="Card image">
@@ -300,8 +323,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="assets/scripts/app.js"></script>
-  <script src="assets/scripts/apiData.js"></script>
   <script src="assets/scripts/search.js"></script>
+  <script src="assets/scripts/elements.js"></script>
   <script src="assets/scripts/splash.js"></script>
   <script>
     fetchPrice(aetherId, `https://wax.alcor.exchange/api/markets/29`),
