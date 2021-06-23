@@ -83,14 +83,14 @@ Media: <br>
 #### Splashscreen
 
 <img src="assets/images/readme/wireframes/splash_desktop.png" alt="aether" width="500" height="300"/>
-<img src="assets/images/readme/wireframes/splash_tablet.png" alt="aether" width="500" height="300"/>
-<img src="assets/images/readme/wireframes/splash_mobile.png" alt="aether" width="500" height="300"/>
+<img src="assets/images/readme/wireframes/splash_tablet.png" alt="aether" width="250" height="300"/>
+<img src="assets/images/readme/wireframes/splash_mobile.png" alt="aether" width="150" height="200"/>
 
 ### Homepage
 
 <img src="assets/images/readme/wireframes/homepage_desktop.png" alt="aether" width="500" height="300"/>
-<img src="assets/images/readme/wireframes/homepage_tablet.png" alt="aether" width="500" height="300"/>
-<img src="assets/images/readme/wireframes/homepage_mobile.png" alt="aether" width="500" height="300"/>
+<img src="assets/images/readme/wireframes/homepage_tablet.png" alt="aether" width="250" height="300"/>
+<img src="assets/images/readme/wireframes/homepage_mobile.png" alt="aether" width="150" height="200"/>
 
 
 # The Surface Plane
