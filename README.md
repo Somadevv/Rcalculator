@@ -13,6 +13,7 @@ Before this was created, there was no easy way to calculate your earnings per da
     * [The Strategy Plane](#The-Strategy-Plane)
     * [Site Goals](#Site-Goals)
     * [User stories](#User-Stories)
+    * [The Structure Plane](#The-Strategy-Plane)
     * [Wireframes](#Wireframes)
 * [The Surface Plane](#The-surface-plane)
     * [Design](#Design)
@@ -58,7 +59,7 @@ The world of Non fungible tokens or NFTs is becoming increasingly popular by the
 1. User story:
 <pre>As a user I want the main purpose of the site to be clear so that I immediately know what the is intended for upon entering</pre>
 
-Implementation:
+**Implementation:**
 
 A splash screen was added to the website to introduce users to the features/tools the website has to offer
 
@@ -70,7 +71,7 @@ Media: <br>
 2. User story:
 <pre>As a user I want the website to be responsive so that I can use other devices and have no issues</pre>
 
-Implementation:
+**Implementation:**
 
 The website was designed for all devices with multiple browser support in mind
 
@@ -84,7 +85,7 @@ Media: <br>
 3. User story:
 <pre>As a user I want to be able to navigate around the website with ease so that I can view content/manipulate content</pre>
 
-Implementation:
+**Implementation:**
 
 The website is a single page design, this means the user will not be redirected to multiple pages within the website therefore increasing user usability and response time 
 <br>
@@ -92,12 +93,36 @@ The website is a single page design, this means the user will not be redirected 
 4. User story:
 <pre>As a user I want to be able to see my mining power earnings in detail</pre>
 
-Implementation:
+**Implementation:**
 
 The mining power tool was created to give users a easy and fast way to see how much their mining power is earning them per day/week/month. With this comes a converted version of the **AETHER** returned, showing the user how much it's worth in **WAX** & **USDT**
 
 Media: <br>
 <img src="assets/images/readme/userstory_result5.png" alt="user story result" width="500" height="300"/>
+
+<br>
+
+5. User story:
+<pre>As a user I want to be able to search and filter elements </pre>
+
+**Implementation:**
+
+The elemental tool was created to give users a easy way to see the price of all of the elements [RPLANET](https://rplanet.io) has to offer and converts the price of the cost from **AETHER** to **WAX** which then displays it's **USDT** cost
+
+Media: <br>
+<img src="assets/images/readme/userstory_result6.png" alt="user story result" width="500" height="300"/>
+
+<br>
+
+5. User story:
+<pre>As a user I want to be able to see a live price feed of the currencies </pre>
+
+**Implementation:**
+
+The live price of **AETHER** and **WAX** is updated every 10 seconds. This price is used in the algorithm of both the mining power tool and the elemental tool used in this project
+
+Media: <br>
+<img src="assets/images/readme/userstory_result4.png" alt="user story result" width="500" height="100"/>
 
 
 
