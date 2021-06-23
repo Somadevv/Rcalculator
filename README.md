@@ -65,6 +65,8 @@ A splash screen was added to the website to introduce users to the features/tool
 Media: <br>
 <img src="assets/images/readme/userstory_result.png" alt="user story result" width="500" height="300"/>
 
+<br>
+
 2. User story:
 <pre>As a user I want the website to be responsive so that I can use other devices and have no issues</pre>
 
@@ -73,24 +75,46 @@ Implementation:
 The website was designed for all devices with multiple browser support in mind
 
 Media: <br>
-<img src="assets/images/readme/userstory_result2.png" alt="user story result" width="300" height="200"/>
+<img src="assets/images/readme/userstory_result2.png" alt="user story result" width="500" height="300"/>
 <br>
-<img src="assets/images/readme/userstory_result3.png" alt="user story result" width="300" height="200"/>
+<img src="assets/images/readme/userstory_result3.png" alt="user story result" width="500" height="300"/>
+
+<br>
+
+3. User story:
+<pre>As a user I want to be able to navigate around the website with ease so that I can view content/manipulate content</pre>
+
+Implementation:
+
+The website is a single page design, this means the user will not be redirected to multiple pages within the website therefore increasing user usability and response time 
+<br>
+
+4. User story:
+<pre>As a user I want to be able to see my mining power earnings in detail</pre>
+
+Implementation:
+
+The mining power tool was created to give users a easy and fast way to see how much their mining power is earning them per day/week/month. With this comes a converted version of the **AETHER** returned, showing the user how much it's worth in **WAX** & **USDT**
+
+Media: <br>
+<img src="assets/images/readme/userstory_result5.png" alt="user story result" width="500" height="300"/>
+
+
 
 
 ## Wireframes
 
 #### Splashscreen
 
-<img src="assets/images/readme/wireframes/splash_desktop.png" alt="aether" width="250" height="200"/>
-<img src="assets/images/readme/wireframes/splash_tablet.png" alt="aether" width="175" height="200"/>
-<img src="assets/images/readme/wireframes/splash_mobile.png" alt="aether" width="125" height="200"/>
+<img src="assets/images/readme/wireframes/splash_desktop.png" alt="aether" width="500" height="300"/>
+<img src="assets/images/readme/wireframes/splash_tablet.png" alt="aether" width="250" height="300"/>
+<img src="assets/images/readme/wireframes/splash_mobile.png" alt="aether" width="250" height="300"/>
 
 ### Homepage
 
-<img src="assets/images/readme/wireframes/homepage_desktop.png" alt="aether" width="250" height="200"/>
-<img src="assets/images/readme/wireframes/homepage_tablet.png" alt="aether" width="175" height="200"/>
-<img src="assets/images/readme/wireframes/homepage_mobile.png" alt="aether" width="125" height="200"/>
+<img src="assets/images/readme/wireframes/homepage_desktop.png" alt="aether" width="500" height="300"/>
+<img src="assets/images/readme/wireframes/homepage_tablet.png" alt="aether" width="250" height="300"/>
+<img src="assets/images/readme/wireframes/homepage_mobile.png" alt="aether" width="250" height="300"/>
 
 
 # The Surface Plane
