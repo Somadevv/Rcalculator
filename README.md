@@ -73,8 +73,9 @@ Implementation:
 The website was designed for all devices with multiple browser support in mind
 
 Media: <br>
-<img src="assets/images/readme/userstory_result2.png" alt="user story result" width="500" height="300"/>
-<img src="assets/images/readme/userstory_result3.png" alt="user story result" width="500" height="300"/>
+<img src="assets/images/readme/userstory_result2.png" alt="user story result" width="500" height="200"/>
+<br>
+<img src="assets/images/readme/userstory_result3.png" alt="user story result" width="500" height="200"/>
 
 
 ## Wireframes
