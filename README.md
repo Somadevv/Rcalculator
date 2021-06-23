@@ -62,8 +62,19 @@ Implementation:
 
 A splash screen was added to the website to introduce users to the features/tools the website has to offer
 
-Media: 
-<img src="assets/images/readme/userstory_result.png" alt="user story result" width="250" height="200"/>
+Media: <br>
+<img src="assets/images/readme/userstory_result.png" alt="user story result" width="500" height="300"/>
+
+2. User story:
+<pre>As a user I want the website to be responsive so that I can use other devices and have no issues</pre>
+
+Implementation:
+
+The website was designed for all devices with multiple browser support in mind
+
+Media: <br>
+<img src="assets/images/readme/userstory_result2.png" alt="user story result" width="500" height="300"/>
+<img src="assets/images/readme/userstory_result3.png" alt="user story result" width="500" height="300"/>
 
 
 ## Wireframes
