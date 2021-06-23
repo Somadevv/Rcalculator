@@ -46,11 +46,25 @@ The world of Non fungible tokens or NFTs is becoming increasingly popular by the
 * Help users easily see the price of elements in other currency formats
 
 ## User stories
-* As a user, I want the main purpose of the site to be clear so that I immediately know what the is intended for upon entering.
-* As a user, I want the website to be responsive so that I can use other devices and have no issues
+* As a user I want the main purpose of the site to be clear so that I immediately know what the is intended for upon entering
+* As a user I want the website to be responsive so that I can use other devices and have no issues
 * As a user I want to be able to navigate around the website with ease so that I can view content/manipulate content
+* As a user I want to be able to see my mining power earnings in detail
 * As a user I want to be able to search and filter elements 
 * As a user I want to be able to see a live price feed of the currencies 
+
+## The Structure Plane
+
+1. User story:
+<pre>As a user I want the main purpose of the site to be clear so that I immediately know what the is intended for upon entering</pre>
+
+Implementation:
+
+A splash screen was added to the website to introduce users to the features/tools the website has to offer
+
+Media: 
+<img src="assets/images/readme/userstory_result.png" alt="user story result" width="250" height="200"/>
+
 
 ## Wireframes
 
