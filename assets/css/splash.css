@@ -1,7 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 * {
     font-family: "Righteous", "Roboto";
     color: wheat;
     
+}
+.splash-main {
+    height: 1366px;
+    background-image: radial-gradient(
+        circle at 0% 0%,
+        #1b1b1b,
+        #242529 51%,
+        #1d1e26
+      );
 }
 .price-image {
     height: 50px;
@@ -11,14 +21,23 @@
     text-align: center;
 }
 .currencies-title {
-
+    font-size:1.25rem;
 }
 .splash-main {
     width: 100vw;
-    height: 94vh;
 }
 .splash-intro-container {
-    height: 70px;
+    padding-top: 25px;
+    margin-bottom: 15px;
+    height: 150px;
+}
+.splash-title {
+    text-align: center;
+    font-size: 4rem;
+}
+.splash-description {
+    text-align: center;
+    font-size: 1rem;
 }
 .splash-flex {
     flex-flow: row wrap;
@@ -26,54 +45,92 @@
 }
 .splash-body {
     margin: 0 auto;
-    height: 80vh;
+    height: auto;
     width: 100vw;
-        background-image: radial-gradient(
-    circle at 0% 0%,
-    #1b1b1b,
-    #242529 51%,
-    #1d1e26
-  );
+
 }
 .box {
-    margin-top: 25px;
+    margin-top: 50px;
     height: 125px;
     width: 100%; 
     text-align: center;
-
+    margin-bottom: 50px;
 }
 .box2 {
     justify-content: space-around;
     width: 50%;
     text-align: center;
 }
-.splash-title {
-    text-align: center;
-    font-size: 1.5rem;
-}
-.splash-description {
-    text-align: center;
-    font-size: 1rem;
-}
+
+
 .splash-text {
     padding-top: .75rem;
-    font-size: .75rem;
-    line-height: 1.4;
+    font-size: 1;
+    line-height: 1;
+    color: #f7f7f7;
 
 }
 .exit-button-container {
     position: relative;
     text-align: center;
     margin: 0 auto;
-    
+    bottom: 150px;
+
 } 
 .exit-button-container > button {
-    border: 0;
     position: relative;
-    left: 5px;
-    top: 12.5px;
-    height: 35px;
+    border-radius: 7.5px;
+    width: 100px;
+    height: 50px;
     color: white;
     background-color: #861142;
     border: 0;
+}
+.exit-button-container >button:hover {
+    opacity: .5;
+}
+.splash-link {
+    color: #ee0968;
+    text-decoration: underline;
+}
+.splash-link:hover {
+    color: #d10d5f;
+    opacity: .5;
+    
+}
+
+@media only screen and (min-width: 300px) { 
+    .price-image {
+        width: 100px;
+        height: 100px;
+    }
+    .box {
+        margin-bottom: 50px;
+    }
+    .exit-button-container {
+        bottom: 0px;
+    }
+
+    .box2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+@media only screen and (min-width: 700px) { 
+    
+    .splash-main {
+        height: 1050px;
+    }
+    .exit-button-container {
+        bottom: 50px;
+    }
+    .price-image {
+        width: 100px;
+        height: 100px;
+    }
+    .box {
+        height: 125px;
+        width: 33%;
+        margin-bottom: 125px;
+    }
+}
 }

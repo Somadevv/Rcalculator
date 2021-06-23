@@ -1,6 +1,8 @@
 /*jshint esversion: 6 */
 
 /* GLOBAL VARIABLES */
+
+
 let elementContainer = document.getElementsByClassName("element-hero-container");
 let toggledCurrency = document.getElementById("currency-title");
 let circleSymbol = document.getElementById("circle-symbol");
@@ -130,6 +132,7 @@ function fetchPrice(currencyId, url) {
       responseData[currencyId] = data;
       return data;
     })
+
     .then((data) => {
       renderDom(data);
       $(btn).removeAttr("disabled");
@@ -191,16 +194,19 @@ $("#calculate-btn").click(function () {
     console.log("error..", inputValue, value);
   }
 });
-
 // RENDER LIVE PRICE TO DOM
 function renderDom(data) {
+  if(data.status === 404) {
+    domAETHER.innerText = "Offline";
+    domAETHER.innerText = "Offline";
+  }
   if (data.id === 29) {
     domAETHER.innerText = data.last_price;
     prices.aether = data.last_price;
   }
   if (data.id === "wax") {
     domWAX.innerText = data.market_data.current_price.usd;
-    prices.wax = data.market_data.current_price.usd;
+    domAETHER.innerText =data.market_data.current_price.usd;
   }
   if (data.id === "uniswap-state-dollar") {
     domUSDT.innerText = data.market_data.current_price.usd;

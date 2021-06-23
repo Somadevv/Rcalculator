@@ -26,9 +26,10 @@ body {
 /* LIVE PRICES NAV BAR */
 
 /* WEBSITE TITLE*/
-.Rcalculator {
+.Rcalculator-title{
   color: wheat;
-  font-size: 1.5rem;
+  padding-top: 25px;
+  font-size: 2rem;
 }
 .prices-container {
   position: relative;
@@ -478,12 +479,10 @@ body {
   margin: auto;
   width: 40%;
   flex-direction: column;
-
   justify-content: space-around;
 }
 
 .well {
-  margin-left: 50%;
   height: auto;
   margin-bottom: 25px;
   text-align: center;
@@ -667,6 +666,9 @@ hr {
 
 /* MOBILE */
 @media only screen and (min-width: 300px) {
+  .elem-flex {
+    width: 80%;
+  }
   #aether-title,
   #wax-title,
   #usdt-title {
@@ -700,10 +702,24 @@ hr {
     width: 400px;
   }
 }
+@media only screen and (min-width: 650px) {
+.elem-flex {
+  width: 70%;
+  flex-flow: row wrap;
+}
+.element-image {
+  width: 250px;
+  height: 200px;
+}
+}
 /* DESKTOP */
 @media only screen and (min-width: 1075px) {
+  .elem-flex {
+    width: 70%;
+    flex-flow: row wrap;
+  }
   .element-image {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
   }
 }
