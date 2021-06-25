@@ -206,7 +206,7 @@ function renderDom(data) {
   }
   if (data.id === "wax") {
     domWAX.innerText = data.market_data.current_price.usd;
-    domAETHER.innerText =data.market_data.current_price.usd;
+    prices.wax = data.market_data.current_price.usd;
   }
   if (data.id === "uniswap-state-dollar") {
     domUSDT.innerText = data.market_data.current_price.usd;
